@@ -1,0 +1,3601 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <title>Hà Tĩnh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo hà tĩnh/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Hà Tĩnh!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Hà Tĩnh</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoihatinh/">TRÒ CHƠI</a>
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+        <script>
+          const audio = document.getElementById("bgMusic");
+          const btn = document.getElementById("toggleBtn");
+          btn.addEventListener("click", () => {
+            if (audio.paused) {
+              audio.play();
+              btn.textContent = "⏸ Tắt nhạc";
+            } else {
+              audio.pause();
+              btn.textContent = "▶ Phát nhạc";
+            }
+          });
+        </script>
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <section class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoihatinh/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </section>
+        </nav>
+      </nav>
+    </header>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      btnRight.addEventListener("click", () => {
+        menuScroll.scrollLeft += step;
+      });
+      btnLeft.addEventListener("click", () => {
+        menuScroll.scrollLeft -= step;
+      });
+    </script>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <header>
+          <h1 class="w3-center" style="color: red; font-size: 35px">
+            LỊCH SỬ HÌNH THÀNH
+          </h1>
+        </header>
+        <article>
+          <p>
+            <strong><mark>Thời kỳ hình thành ban đầu</mark></strong
+            ><br />
+            Hà Tĩnh là vùng đất có lịch sử lâu đời, gắn liền với quá trình phát
+            triển của xứ Nghệ. Trong thời kỳ độc lập tự chủ dưới các triều Ngô,
+            Đinh, Tiền Lê, vùng đất này thuộc Hoan Châu.
+          </p>
+
+          <p>
+            <strong><mark>Thời Lý – Trần – Minh – Hậu Lê</mark></strong
+            ><br />
+            Đến thời nhà Lý, năm <u>1030</u>, danh xưng Nghệ An châu lần đầu
+            tiên xuất hiện. Thời Trần gọi là Trại Nghệ An, thời thuộc Minh chia
+            thành hai phủ Diễn Châu và Nghệ An. Dưới triều Hậu Lê, hai phủ được
+            sáp nhập thành Nghệ An thừa tuyên, sau đổi thành xứ Nghệ An; phần
+            đất Hà Tĩnh ngày nay thuộc hai phủ Đức Quang và Hà Hoa.
+          </p>
+
+          <p>
+            <strong><mark>Biến động lãnh thổ đầu triều Nguyễn</mark></strong
+            ><br />
+            Năm <u>1802</u>, vua Gia Long cắt các vùng Trấn Ninh, Trấn Biên,
+            Trấn Định và Trấn Tĩnh cho nước Vạn Tượng. Đến thời Minh Mạng, một
+            số vùng đất phía tây được tái sáp nhập và hệ thống hành chính được
+            điều chỉnh.
+          </p>
+
+          <p>
+            <strong><mark>Thành lập tỉnh Hà Tĩnh</mark></strong
+            ><br />
+            Năm <u>1831</u>, vua Minh Mạng chia trấn Nghệ An thành hai tỉnh Nghệ
+            An và Hà Tĩnh. Từ đây, tỉnh Hà Tĩnh chính thức được thành lập, ban
+            đầu gồm hai phủ Đức Thọ và Hà Hoa, sau đổi là phủ Hà Thanh.
+          </p>
+
+          <p>
+            <strong><mark>Thay đổi hành chính thời hiện đại</mark></strong
+            ><br />
+            Từ <u>1992</u> đến <u>2015</u>, tỉnh Hà Tĩnh lần lượt thành lập thị
+            xã Hồng Lĩnh, huyện Vũ Quang, huyện Lộc Hà, thị xã Kỳ Anh và nâng
+            thị xã Hà Tĩnh lên thành phố.
+          </p>
+
+          <p>
+            <strong><mark>Cơ cấu hành chính hiện nay</mark></strong
+            ><br />
+            Đến ngày <u>01/01/2025</u>, huyện Lộc Hà được giải thể và sáp nhập
+            vào thành phố Hà Tĩnh và huyện Thạch Hà. Hiện nay, tỉnh Hà Tĩnh có
+            <u>1</u> thành phố, <u>2</u> thị xã và <u>9</u> huyện.
+          </p>
+
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+              target="_blank"
+              >wiki Hà Tĩnh</a
+            >
+            )
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://static.vinwonders.com/production/gioi-thieu-ha-tinh.jpg"
+            class="w3-container"
+            alt=""
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://vinwonders.com/vi/wonderpedia/news/du-lich-ha-tinh/"
+              target="_blank"
+              >vinwonders.com</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <header>
+          <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+            ĐỊA LÝ
+          </h1>
+        </header>
+        <article>
+          <p>
+            Hà Tĩnh trải dài từ 17°54’ đến 18°37’ vĩ Bắc và từ 106°30’ đến
+            105°07’ kinh Đông
+          </p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực Bắc tại: xã Sơn Kim 1, huyện Hương Sơn, khoảng
+              <u>18°38′B, 105°17′Đ</u>
+            </li>
+            <li>
+              Điểm cực Tây tại: xã Hương Quang, huyện Vũ Quang, khoảng
+              <u>18°15′B, 105°09′Đ</u>
+            </li>
+            <li>
+              Điểm cực Nam tại: xã Kỳ Nam, thị xã Kỳ Anh, khoảng
+              <u>17°54′B, 106°28′Đ</u>
+            </li>
+            <li>
+              Điểm cực Đông tại: xã Thạch Kim, huyện Thạch Hà, khoảng
+              <u>18°27′B, 106°30′Đ</u>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+            liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính tỉnh
+            Đồng Tháp sau sáp nhập (2025) và dữ liệu bản đồ số.
+          </p>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>Phía đông giáp Biển Đông</li>
+            <li>Phía tây giáp tỉnh Borikhamxay và tỉnh Khammouan, Lào</li>
+            <li>Phía nam giáp tỉnh Quảng Trị</li>
+            <li>Phía bắc giáp tỉnh Nghệ An</li>
+          </ul>
+          <p style="font-size: 15px">
+            Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+              target="_blank"
+              >Wikipedia – Hà Tĩnh</a
+            >
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://bandotreotuongkholon.com/wp-content/uploads/2025/08/ban-do-tinh-Ha-Tinh-moi-nhat-sau-sap-nhap.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Hải Phòng"
+            style="width: 75%"
+          />
+          <span class="text-overlay"></span>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://bandotreotuongkholon.com/Ban-Do-Kho-Lon-Gia-Re/ban-do-hanh-chinh/ban-do-tinh-gia-lai-moi-nhat-sau-sap-nhap/"
+              target="_blank"
+              >bandotreotuongkholon.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        </header>
+        <article>
+          <p>
+            <strong><mark>Địa hình chung</mark></strong
+            ><br />
+            Hà Tĩnh nằm ở sườn Đông dãy Trường Sơn, có địa hình hẹp, dốc và
+            nghiêng từ tây sang đông. Lãnh thổ kéo dài theo hướng tây bắc – đông
+            nam và bị chia cắt mạnh bởi hệ thống sông suối, tạo nên cấu trúc địa
+            hình phức tạp và đa dạng.
+          </p>
+
+          <p>
+            <strong><mark>Các vùng địa hình</mark></strong
+            ><br />
+            Địa hình Hà Tĩnh gồm bốn vùng chính: vùng núi cao ở phía tây với độ
+            cao trung bình khoảng <u>1.500 m</u>; vùng trung du và bán sơn địa
+            là khu chuyển tiếp từ núi xuống đồng bằng; vùng đồng bằng và vùng
+            ven biển tương đối bằng phẳng, thuận lợi cho sản xuất nông nghiệp và
+            khai thác biển.
+          </p>
+
+          <p>
+            <strong><mark>Tài nguyên rừng</mark></strong
+            ><br />
+            Hà Tĩnh có diện tích rừng <u>276.003 ha</u>, độ che phủ khoảng
+            <u>45%</u>. Rừng tự nhiên chủ yếu là rừng nhiệt đới, vùng núi cao có
+            rừng á nhiệt đới, với nhiều loài gỗ quý và động vật hoang dã.
+          </p>
+
+          <p>
+            <strong><mark>Tài nguyên biển</mark></strong
+            ><br />
+            Tỉnh có bờ biển dài <u>137 km</u>, hệ sinh thái biển đa dạng với
+            nhiều loài cá, tôm và nhuyễn thể, thuận lợi cho phát triển đánh bắt
+            và nuôi trồng thủy sản.
+          </p>
+
+          <p>
+            <strong><mark>Sông ngòi và hồ chứa</mark></strong
+            ><br />
+            Hệ thống sông ngòi và hồ chứa khá dày đặc, nổi bật là sông La và
+            sông Lam cùng nhiều phụ lưu khác. Tổng chiều dài sông khoảng
+            <u>400 km</u>, tổng sức chứa hồ chứa ước khoảng <u>13 tỷ m³</u>,
+            giúp điều tiết nước, phòng chống thiên tai và phục vụ sản xuất.
+          </p>
+
+          <p>
+            <strong><mark>Khoáng sản</mark></strong
+            ><br />
+            Hà Tĩnh có nguồn khoáng sản đa dạng như sắt, thiếc, than đá, cát
+            thủy tinh, cao lanh, phân bố ở nhiều địa phương, tạo tiềm năng phát
+            triển công nghiệp và khai khoáng.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+            >wiki-Hà Tĩnh</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <header>
+          <h1 style="font-size: 50px">KHÍ HẬU</h1>
+          <br />
+        </header>
+        <article>
+          <p>
+            <strong><mark>Khí hậu chung</mark></strong
+            ><br />
+            Hà Tĩnh nằm trong khu vực nhiệt đới gió mùa nóng ẩm, chịu ảnh hưởng
+            của khí hậu chuyển tiếp giữa miền Bắc và miền Nam. Nhiệt độ trung
+            bình khoảng <u>24 °C - 24,8 °C</u>.
+          </p>
+
+          <p>
+            <strong><mark>Mùa hè</mark></strong
+            ><br />
+            Từ tháng 4 đến tháng 10, là mùa nắng, khô hạn kèm theo những đợt gió
+            phơn Tây Nam (Gió Lào) khô nóng. Nhiệt độ có thể lên tới hơn
+            <u>40 °C</u>. Khoảng cuối tháng 7 đến tháng 10 thường xuất hiện các
+            đợt bão kèm mưa gây ngập úng, lượng mưa lớn nhất có thể đạt
+            <u>600 mm/ngày đêm</u>.
+          </p>
+
+          <p>
+            <strong><mark>Mùa đông</mark></strong
+            ><br />
+            Từ tháng 11 đến tháng 3 năm sau, mùa đông chủ yếu có gió mùa Đông
+            Bắc kéo theo mưa phùn. Nhiệt độ mùa đông có thể xuống tới
+            <u>5 °C</u>.
+          </p>
+        </article>
+        <table
+          style="
+            width: 100%;
+            border-color: rgb(162, 169, 177);
+            background-color: rgb(234, 236, 240);
+          "
+        >
+          <tbody>
+            <tr>
+              <th colspan="14">
+                <strong><mark>Dữ liệu khí hậu của Hà Tĩnh</mark></strong>
+              </th>
+            </tr>
+            <tr>
+              <th scope="row">Tháng</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th>Năm</th>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Cao kỉ lục °C (°F)</th>
+              <td style="background: #ff3900; color: #000000">
+                <u>36.0</u><br />(96.8)
+              </td>
+              <td style="background: #ff2c00; color: #000000">
+                <u>37.5</u><br />(99.5)
+              </td>
+              <td style="background: #ff1d00; color: #000000">
+                <u>39.0</u><br />(102.2)
+              </td>
+              <td style="background: #ff1100; color: #ffffff">
+                <u>40.5</u><br />(104.9)
+              </td>
+              <td style="background: #ed0000; color: #ffffff">
+                <u>42.0</u><br />(107.6)
+              </td>
+              <td style="background: #f10000; color: #ffffff">
+                <u>41.5</u><br />(106.7)
+              </td>
+              <td style="background: #ff0400; color: #ffffff">
+                <u>40.2</u><br />(104.4)
+              </td>
+              <td style="background: #ff1300; color: #ffffff">
+                <u>39.0</u><br />(102.2)
+              </td>
+              <td style="background: #ff1e00; color: #000000">
+                <u>37.8</u><br />(100.0)
+              </td>
+              <td style="background: #ff2100; color: #000000">
+                <u>36.5</u><br />(97.7)
+              </td>
+              <td style="background: #ff2900; color: #000000">
+                <u>35.2</u><br />(95.4)
+              </td>
+              <td style="background: #ff4200; color: #000000">
+                <u>33.8</u><br />(92.8)
+              </td>
+              <td style="background: #ed0000; color: #ffffff">
+                <u>42.0</u><br />(107.6)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Trung bình ngày tối đa °C (°F)</th>
+              <td style="background: #ff962d; color: #000000">
+                18.0<br />(64.4)
+              </td>
+              <td style="background: #ff9327; color: #000000">
+                19.2<br />(66.6)
+              </td>
+              <td style="background: #ff8001; color: #000000">
+                22.0<br />(71.6)
+              </td>
+              <td style="background: #ff6200; color: #000000">
+                26.0<br />(78.8)
+              </td>
+              <td style="background: #ff4500; color: #000000">
+                29.5<br />(85.1)
+              </td>
+              <td style="background: #ff3b00; color: #000000">
+                31.0<br />(87.8)
+              </td>
+              <td style="background: #ff3900; color: #000000">
+                32.0<br />(89.6)
+              </td>
+              <td style="background: #ff3f00; color: #000000">
+                31.5<br />(88.7)
+              </td>
+              <td style="background: #ff4600; color: #000000">
+                30.0<br />(86.0)
+              </td>
+              <td style="background: #ff5700; color: #000000">
+                28.0<br />(82.4)
+              </td>
+              <td style="background: #ff6f00; color: #000000">
+                24.5<br />(76.1)
+              </td>
+              <td style="background: #ff860d; color: #000000">
+                20.5<br />(68.9)
+              </td>
+              <td style="background: #ff6200; color: #000000">
+                26.0<br />(78.8)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Trung bình ngày °C (°F)</th>
+              <td style="background: #ffac5a; color: #000000">
+                15.5<br />(59.9)
+              </td>
+              <td style="background: #ffa74f; color: #000000">
+                16.2<br />(61.2)
+              </td>
+              <td style="background: #ff9429; color: #000000">
+                19.0<br />(66.2)
+              </td>
+              <td style="background: #ff7900; color: #000000">
+                22.8<br />(73.0)
+              </td>
+              <td style="background: #ff6100; color: #000000">
+                26.0<br />(78.8)
+              </td>
+              <td style="background: #ff5600; color: #000000">
+                27.8<br />(82.0)
+              </td>
+              <td style="background: #ff5400; color: #000000">
+                28.5<br />(83.3)
+              </td>
+              <td style="background: #ff5800; color: #000000">
+                28.0<br />(82.4)
+              </td>
+              <td style="background: #ff6000; color: #000000">
+                26.5<br />(79.7)
+              </td>
+              <td style="background: #ff7200; color: #000000">
+                24.0<br />(75.2)
+              </td>
+              <td style="background: #ff8914; color: #000000">
+                21.0<br />(69.8)
+              </td>
+              <td style="background: #ffa042; color: #000000">
+                17.8<br />(64.0)
+              </td>
+              <td style="background: #ff7b00; color: #000000">
+                23.0<br />(73.4)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Tối thiểu trung bình ngày °C (°F)</th>
+              <td style="background: #ffbb77; color: #000000">
+                13.0<br />(55.4)
+              </td>
+              <td style="background: #ffb46a; color: #000000">
+                14.0<br />(57.2)
+              </td>
+              <td style="background: #ffa143; color: #000000">
+                16.5<br />(61.7)
+              </td>
+              <td style="background: #ff8811; color: #000000">
+                20.0<br />(68.0)
+              </td>
+              <td style="background: #ff7400; color: #000000">
+                23.0<br />(73.4)
+              </td>
+              <td style="background: #ff6a00; color: #000000">
+                25.0<br />(77.0)
+              </td>
+              <td style="background: #ff6800; color: #000000">
+                25.5<br />(77.9)
+              </td>
+              <td style="background: #ff6a00; color: #000000">
+                25.0<br />(77.0)
+              </td>
+              <td style="background: #ff7200; color: #000000">
+                23.5<br />(74.3)
+              </td>
+              <td style="background: #ff8409; color: #000000">
+                21.0<br />(69.8)
+              </td>
+              <td style="background: #ff9b38; color: #000000">
+                18.0<br />(64.4)
+              </td>
+              <td style="background: #ffb266; color: #000000">
+                15.0<br />(59.0)
+              </td>
+              <td style="background: #ff8b18; color: #000000">
+                20.0<br />(68.0)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Thấp kỉ lục °C (°F)</th>
+              <td style="background: #f5f5ff; color: #000000">
+                3.0<br />(37.4)
+              </td>
+              <td style="background: #fffbf8; color: #000000">
+                5.5<br />(41.9)
+              </td>
+              <td style="background: #ffeddc; color: #000000">
+                8.0<br />(46.4)
+              </td>
+              <td style="background: #ffdab5; color: #000000">
+                11.0<br />(51.8)
+              </td>
+              <td style="background: #ffb368; color: #000000">
+                16.0<br />(60.8)
+              </td>
+              <td style="background: #ff9429; color: #000000">
+                19.5<br />(67.1)
+              </td>
+              <td style="background: #ff8d1b; color: #000000">
+                20.5<br />(68.9)
+              </td>
+              <td style="background: #ff8d1c; color: #000000">
+                20.0<br />(68.0)
+              </td>
+              <td style="background: #ffaf5f; color: #000000">
+                16.5<br />(61.7)
+              </td>
+              <td style="background: #ffc892; color: #000000">
+                13.0<br />(55.4)
+              </td>
+              <td style="background: #ffefdf; color: #000000">
+                8.0<br />(46.4)
+              </td>
+              <td style="background: #fafaff; color: #000000">
+                4.0<br />(39.2)
+              </td>
+              <td style="background: #f5f5ff; color: #000000">
+                3.0<br />(37.4)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Lượng mưa trung bình mm (inches)</th>
+              <td style="background: #e4ffe4; color: #000000">20<br />(0.8)</td>
+              <td style="background: #dfffdf; color: #000000">25<br />(1.0)</td>
+              <td style="background: #ccffcc; color: #000000">40<br />(1.6)</td>
+              <td style="background: #5dff5d; color: #000000">
+                110<br />(4.3)
+              </td>
+              <td style="background: #09ff09; color: #000000">
+                170<br />(6.7)
+              </td>
+              <td style="background: #006400; color: #ffffff">
+                260<br />(10.2)
+              </td>
+              <td style="background: #008400; color: #ffffff">
+                250<br />(9.8)
+              </td>
+              <td style="background: #006500; color: #ffffff">
+                270<br />(10.6)
+              </td>
+              <td style="background: #008700; color: #ffffff">
+                245<br />(9.6)
+              </td>
+              <td style="background: #16ff16; color: #000000">
+                160<br />(6.3)
+              </td>
+              <td style="background: #a4ffa4; color: #000000">60<br />(2.4)</td>
+              <td style="background: #e1ffe1; color: #000000">25<br />(1.0)</td>
+              <td style="background: #33ff33; color: #000000">
+                1.605<br />(63.2)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Số ngày mưa trung bình</th>
+              <td style="background: #7f7fff; color: #000000">10</td>
+              <td style="background: #5757ff; color: #ffffff">12</td>
+              <td style="background: #3939ff; color: #ffffff">15</td>
+              <td style="background: #4747ff; color: #ffffff">14</td>
+              <td style="background: #4c4cff; color: #ffffff">15</td>
+              <td style="background: #4444ff; color: #ffffff">15</td>
+              <td style="background: #3e3eff; color: #ffffff">16</td>
+              <td style="background: #2e2eff; color: #ffffff">17</td>
+              <td style="background: #5151ff; color: #ffffff">14</td>
+              <td style="background: #7878ff; color: #000000">11</td>
+              <td style="background: #9a9aff; color: #000000">8</td>
+              <td style="background: #c1c1ff; color: #000000">5</td>
+              <td style="background: #5f5fff; color: #ffffff">152</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Độ ẩm tương đối trung bình (%)</th>
+              <td style="background: #0000c8; color: #ffffff">81</td>
+              <td style="background: #0000be; color: #ffffff">83</td>
+              <td style="background: #0000ad; color: #ffffff">87</td>
+              <td style="background: #0000a8; color: #ffffff">89</td>
+              <td style="background: #0000b3; color: #ffffff">86</td>
+              <td style="background: #0000c0; color: #ffffff">83</td>
+              <td style="background: #0000c3; color: #ffffff">82</td>
+              <td style="background: #0000b5; color: #ffffff">85</td>
+              <td style="background: #0000b0; color: #ffffff">87</td>
+              <td style="background: #0000bb; color: #ffffff">84</td>
+              <td style="background: #0000c4; color: #ffffff">82</td>
+              <td style="background: #0000c7; color: #ffffff">81</td>
+              <td style="background: #0000c4; color: #ffffff">83</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Số giờ nắng trung bình tháng</th>
+              <td style="background: #878787; color: #ffffff">70</td>
+              <td style="background: #5e5e5e; color: #ffffff">45</td>
+              <td style="background: #555555; color: #ffffff">50</td>
+              <td style="background: #aaaaaa; color: #000000">90</td>
+              <td style="background: #d3d300; color: #000000">180</td>
+              <td style="background: #d0d000; color: #000000">170</td>
+              <td style="background: #d6d600; color: #000000">195</td>
+              <td style="background: #cfcf00; color: #000000">175</td>
+              <td style="background: #d2d200; color: #000000">175</td>
+              <td style="background: #cbcb00; color: #000000">165</td>
+              <td style="background: #c0c024; color: #000000">140</td>
+              <td style="background: #b8b855; color: #000000">125</td>
+              <td style="background: #bcbc38; color: #000000">1.580</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 15px">
+          (Nguồn: Viện Khí tượng Thủy văn Việt Nam,
+          <a
+            href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+            target="_blank"
+          >
+            wiki-Hà Tĩnh </a
+          >)
+        </p>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Kỳ Anh",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/ky-anh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Cẩm Xuyên ",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/cam-xuyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hương Khê",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/huong-khe?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thạch Hà",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/thach-ha?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Can Lộc",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/can-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nghi Xuân",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/nghi-xuan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Vũ Quang",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/vu-quang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đức Thọ",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/duc-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hương Sơn",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/huong-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Kỳ Anh",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/thi-xa-ky-anh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Hồng Lĩnh",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/hong-linh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Hà Tĩnh",
+              parent: "Tỉnh Hà Tĩnh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-tinh/ha-tinh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        </header>
+        <article>
+          <figure style="overflow-x: auto">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr style="background: #f0f0f0">
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>1995</td>
+                  <td>1,247,700</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td>1,253,200</td>
+                  <td>+0.44%</td>
+                </tr>
+                <tr>
+                  <td>1997</td>
+                  <td>1,258,600</td>
+                  <td>+0.43%</td>
+                </tr>
+                <tr>
+                  <td>1998</td>
+                  <td>1,264,400</td>
+                  <td>+0.46%</td>
+                </tr>
+                <tr>
+                  <td>1999</td>
+                  <td>1,271,100</td>
+                  <td>+0.53%</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>1,268,400</td>
+                  <td>-0.21%</td>
+                </tr>
+                <tr>
+                  <td>2001</td>
+                  <td>1,265,100</td>
+                  <td>-0.26%</td>
+                </tr>
+                <tr>
+                  <td>2002</td>
+                  <td>1,260,800</td>
+                  <td>-0.34%</td>
+                </tr>
+                <tr>
+                  <td>2003</td>
+                  <td>1,256,300</td>
+                  <td>-0.36%</td>
+                </tr>
+                <tr>
+                  <td>2004</td>
+                  <td>1,252,200</td>
+                  <td>-0.33%</td>
+                </tr>
+                <tr>
+                  <td>2005</td>
+                  <td>1,247,800</td>
+                  <td>-0.35%</td>
+                </tr>
+                <tr>
+                  <td>2006</td>
+                  <td>1,243,600</td>
+                  <td>-0.34%</td>
+                </tr>
+                <tr>
+                  <td>2007</td>
+                  <td>1,239,000</td>
+                  <td>-0.36%</td>
+                </tr>
+                <tr>
+                  <td>2008</td>
+                  <td>1,234,000</td>
+                  <td>-0.40%</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>1,227,800</td>
+                  <td>-0.50%</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>1,228,200</td>
+                  <td>+0.03%</td>
+                </tr>
+                <tr>
+                  <td>2011</td>
+                  <td>1,229,300</td>
+                  <td>+0.09%</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>1,243,195</td>
+                  <td>+1.13%</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>1,249,104</td>
+                  <td>+0.48%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>1,255,253</td>
+                  <td>+0.50%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>1,261,288</td>
+                  <td>+0.48%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>1,266,700</td>
+                  <td>+0.44%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>1,270,814</td>
+                  <td>+0.32%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>1,277,500</td>
+                  <td>+0.52%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>1,288,866</td>
+                  <td>+0.89%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>1,296,620</td>
+                  <td>+0.60%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>1,301,601</td>
+                  <td>+0.38%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>1,309,000</td>
+                  <td>+0.57%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>1,315,500</td>
+                  <td>+0.50%</td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>1,321,800</td>
+                  <td>+0.48%</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>
+            <strong><mark>LƯU Ý:</mark></strong
+            >Các số liệu năm 2022-2024 chỉ là ước tính, chưa phải số liệu điều
+            tra chính thức, được nội suy hoặc dựa trên thống kê hàng năm của
+            Tổng cục Thống kê Việt Nam.
+          </p>
+          <p>
+            <strong><mark>Dân số:</mark></strong> Tính đến ngày
+            <u>1 tháng 4 năm 2019</u>, Hà Tĩnh có tổng dân số
+            <u>1.288.866 người</u>, mật độ dân số <u>205 người/km²</u>. Trong
+            đó, dân số thành thị đạt <u>251.968 người</u> (chiếm <u>19,5%</u>),
+            dân số nông thôn <u>1.036.898 người</u> (chiếm <u>80,5%</u>). Dân số
+            nam <u>640.709 người</u>, nữ <u>648.157 người</u>. Tỷ lệ tăng tự
+            nhiên dân số phân theo địa phương là <u>0,49 ‰</u>.
+          </p>
+
+          <p>
+            <strong><mark>Dân tộc:</mark></strong> Tỉnh có
+            <u>31 dân tộc</u> cùng 1 người nước ngoài sinh sống. Dân tộc Kinh
+            đông nhất với <u>1.224.869 người</u>, tiếp theo là người Mường
+            <u>549 người</u>, người Thái <u>500 người</u>, người Lào
+            <u>433 người</u>. Các dân tộc khác gồm: Tày, Khmer, Hoa, Nùng,
+            H'Mông, Dao, Gia Rai, Ê Đê, Ba Na, Sán Chay, Chăm, Cơ Ho, Xơ Đăng,
+            Sán Dìu, Hrê, Raglay, Mnông, Thổ, Khơ Mú, Tà Ôi, Mạ, Giẻ-Triêng, La
+            Chí, Chứt, Lô Lô, Cơ Lao, Cống.
+          </p>
+
+          <p>
+            <strong><mark>Tôn giáo:</mark></strong> Tính đến ngày
+            <u>1 tháng 4 năm 2019</u>, Hà Tĩnh có 8 tôn giáo với tổng
+            <u>150.383 tín đồ</u>. Trong đó, Công giáo có <u>149.273 người</u>,
+            Phật giáo <u>1.069 người</u>, Phật giáo Hòa Hảo 7 người, Hồi giáo
+            Việt Nam 6 người, Minh Lý Đạo 4 người, Tin Lành 18 người, Đạo Tứ Ân
+            Hiếu Nghĩa 1 người, Đạo Bửu Sơn Kỳ Hương 5 người.
+          </p>
+
+          <p>
+            <strong><mark>Công giáo:</mark></strong> Hà Tĩnh là một trong 15
+            tỉnh, thành phố có số lượng tín đồ Công giáo đông nhất cả nước, với
+            6 giáo hạt, 58 giáo xứ, 231 họ đạo, 3 tu viện dòng Mến Thánh Giá
+            Vinh và nhiều cơ sở, nhóm nữ tu. Năm 2019, toàn tỉnh có
+            <u>56 linh mục</u> và hơn <u>150 nữ tu</u>,
+            <u>149.273 giáo dân</u> (chiếm 11,5% dân số). Có
+            <u>131/262 xã, phường, thị trấn</u> có đông giáo dân và
+            <u>461 khu dân cư vùng giáo</u>, trong đó
+            <u>114 vùng giáo toàn vùng</u>.
+          </p>
+
+          <p style="font-size: 15px">
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+              target="_blank"
+              >Wikipedia – Hà Tĩnh</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        </header>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Hà Tĩnh là mảnh đất giàu bản sắc văn hóa truyền thống, nổi bật với
+            lễ hội dân gian đặc sắc, các di tích lịch sử – cách mạng, và những
+            làn điệu dân ca mượt mà như ví, giặm.
+          </p>
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Hà Tĩnh:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark><strong> Lễ hội cầu ngư Nhượng Bạn </strong></mark>
+                <p>Thời gian: <u>Ngày 8/4 âm lịch hằng năm</u></p>
+                <p>Địa điểm: <u> xã Thiên Cầm, Hà Tĩnh</u></p>
+                <p>
+                  Lễ hội cầu ngư Nhượng Bạn xuất phát từ tín ngưỡng thờ Ngư Ông
+                  với mong muốn tri ân, tưởng nhớ công đức và cầu Ngư Ông phù hộ
+                  mưa thuận gió hòa, biển nhiều tôm cá. Đây là di sản văn hóa
+                  phi vật thể cấp quốc gia và là niềm tự hào của người dân vùng
+                  biển huyện Cẩm Xuyên cũ.
+                </p>
+                <p>
+                  Lễ hội được tổ chức gồm 4 phần: tế lễ, lễ hội chèo cạn, lễ
+                  rước Ngư Ông ra biển, lễ tế tại miếu đường. Trong đó, lễ hội
+                  chèo cạn là hoạt động đặc sắc nhất được nhiều người mong đợi
+                  với các điệu hò chèo cạn độc đáo mang đậm bản sắc nghệ thuật
+                  của vùng biển Hà Tĩnh.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-2_1639111735.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội chùa Hương Tích ở Hà Tĩnh </strong></mark>
+                <p>Thời gian: <u>Mùng 4 đến 9 Tết hằng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>
+                    Chùa Hương Tích, đỉnh núi Hồng Lĩnh, xã Can Lộc, T. Hà
+                    Tĩnh</u
+                  >
+                </p>
+                <p>
+                  Lễ hội chùa Hương Tích Hà Tĩnh thu hút hàng nghìn lượt người
+                  tham gia trẩy hội, vãng cảnh, dâng hương lễ phật cầu năm mới
+                  an lành, thịnh vượng. Đặc biệt, tham gia lễ hội ở Hà Tĩnh này,
+                  du khách còn được hòa mình vào nhiều hoạt động sôi nổi, thú vị
+                  như: kéo co, đấu vật, bóng chuyền, giao lưu văn hóa nghệ thuật
+                  và chiêm ngưỡng những hiện vật cổ giá trị được khai quật từ di
+                  tích Trang Vương.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-3_1639111772.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Hải Thượng Lãn Ông </strong></mark>
+                <p>Thời gian: <u> 15/1 âm lịch hằng năm </u></p>
+                <p>
+                  Địa điểm:
+                  <u>
+                    Quần thể di tích Hải Thượng Lãn Ông, X. Hương Sơn, T. Hà
+                    Tĩnh
+                  </u>
+                </p>
+                <p>
+                  Lễ hội ở Hà Tĩnh này được tổ chức với ý nghĩa cầu mong sức
+                  khỏe, quốc thái dân an và tưởng nhớ công đức đại danh y Lê Hữu
+                  Trác. Đến với lễ hội, du khách sẽ có dịp tham quan quần thể di
+                  tích Hải Thượng Lãn Ông Hà Tĩnh với nét đẹp thơ mộng, trữ tình
+                  và tham gia nghi lễ dâng hương, tưởng niệm, thả đèn hoa
+                  đăng,...
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-4_1639111823.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội chùa Chân Tiên </strong></mark>
+                <p>Thời gian: <u>Mùng 3/3 âm lịch hằng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u> Chùa Chân Tiên, núi Tiên Am, X. Lộc Hà, T. Hà Tĩnh</u>
+                </p>
+                <p>
+                  Mỗi năm vào dịp lễ hội chùa Chân Tiên, đông đảo tăng ni phật
+                  tử, du khách gần xa đến chùa tham dự, thắp hương cầu bình an,
+                  may mắn. Lễ hội còn diễn ra nhiều trò chơi dân gian đặc sắc
+                  như: đu tiên, đánh cù, đấu vật cùng các hoạt động văn hóa, văn
+                  nghệ. Đặc biệt, du khách còn có dịp chiêm ngưỡng bàn cờ tiên,
+                  dấu chân tiên hằn lên đá và thưởng ngoạn cảnh sắc tuyệt đẹp từ
+                  đỉnh núi Am Tiên với rừng thông trùng điệp và núi non hùng vĩ.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-5_1639111859.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội đền Lê Khôi </strong></mark>
+                <p>Thời gian: <u>Ngày 1 - 3/5 âm lịch hằng năm</u></p>
+                <p>
+                  Địa điểm: <u> Đền Lê Khôi, chân núi Nam Giới, T. Hà Tĩnh</u>
+                </p>
+                <p>
+                  Lễ hội đền Lê Khôi được tổ chức hằng năm nhằm ghi ơn và tưởng
+                  nhớ công lao đánh giặc, giữ yên bờ cõi của vị tướng tài ba
+                  thời Hậu Lê. Ý nghĩa lễ hội còn mang tính tuyên truyền, giáo
+                  dục tinh thần yêu nước cho thế hệ trẻ. Lễ hội thu hút đông đảo
+                  người dân đến tham dự, thắp hương dâng lễ và cầu mong sức
+                  khỏe, gia đạo bình an tại ngôi đền nổi tiếng linh thiêng.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-7_1639111944.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark
+                  ><strong>Lễ hội đánh cá truyền thống Đồng Hoa </strong></mark
+                >
+                <p>Thời gian: <u> Chủ nhật trung tuần tháng 5 âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Đầm Vực, dưới chân núi Hồng Lĩnh, X. Nghi Xuân, T. Hà Tĩnh
+                  </u>
+                </p>
+                <p>
+                  Đây là lễ hội ở Hà Tĩnh cực kỳ thú vị với trải nghiệm bắt cá
+                  đặc biệt mà bạn đừng bỏ lỡ trong chuyến du lịch. Lễ hội đánh
+                  cá truyền thống được tổ chức với tinh thần khuyến nông, khuyến
+                  ngư thể hiện tình đoàn kết, gắn bó đồng bào. Người tham gia lễ
+                  hội từ khắp nơi sẽ mang theo nơm, lưới, vợt,... và nô nức lội
+                  xuống đầm Vực bắt cá sau khi kết thúc nghi thức phần lễ. Theo
+                  quan niệm lễ hội đánh cá truyền thống Đồng Hoa, người nào bắt
+                  được cá to sẽ gặp được nhiều may mắn, mùa màng bội thu, buôn
+                  may bán đắt.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-8_1639111976.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>: Lễ hội đền Bà Hải </strong></mark>
+                <p>Thời gian: <u>Ngày 12/2 âm lịch hằng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>
+                    Đền bà Nguyễn Thị Bích Châu (đền Bà Hải), cửa khẩu bến Kỳ
+                    La, T. Hà Tĩnh</u
+                  >
+                </p>
+                <p>
+                  Lễ hội đền Bà Hải thu hút đông đảo người dân địa phương, du
+                  khách đến tham gia trẩy hội, thắp hương thỉnh cầu tài lộc, may
+                  mắn, bình an. Đây là lệ giỗ của Chế thắng Phu nhân Nguyễn Thị
+                  Bích Châu, được tổ chức nhằm tưởng nhớ và thể hiện lòng tôn
+                  kính đối với bà. Ngoài phần tế lễ, dâng hương, lễ hội ở Hà
+                  Tĩnh này còn diễn ra nhiều trò chơi dân gian sôi nổi như: đua
+                  thuyền, kéo co,...
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-ha-tinh-9_1639112002.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/kham-pha-y-nghia-va-nhung-trai-nghiem-doc-dao-tai-7-le-hoi-o-ha-tinh"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            DI TÍCH, DI SẢN VĂN HOÁ
+          </h1>
+        </header>
+        <article>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol type="1">
+              <li>
+                Khu tưởng niệm Ngã ba Đồng Lộc<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/9DAp5NGLmFfHer9D9"
+                  target="_blank"
+                  >9PXQ+RGF, QL15, Đồng Lộc, Can Lộc, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a088c676-679b-4a7e-810f-afce9134139c-khu-tuong-niem-nga-ba-dong-locpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Thái Yên<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/mhK35nnFresbS7dK9"
+                  target="_blank"
+                  >GMF7+MF2, Thanh Bình Thịnh, Đức Thọ, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – kiến trúc - nghệ thuật
+                <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/7f1b5319-7fc3-419e-9615-179f69e2aced-den-thai-yen-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích đền thờ Nguyễn Biểu<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/tiUB7rf96zzG4f8r5"
+                  target="_blank"
+                  >GJXX+8GR, Yên Hồ, Đức Thọ, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá - kiến trúc - nghệ
+                thuật<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/704d1d08-3146-4c32-89e3-3bb2773d17b9-khu-di-tich-den-tho-nguyen-bieu-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Đinh Lễ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/CZNQxzetV4E62PkU8"
+                  target="_blank"
+                  >GHF5+FRG, ĐT70, Tùng Anh, Đức Thọ, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a96e4483-3a68-40c1-92c6-7230024cc3d0-den-dinh-le-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích mộ và đền thờ Nguyễn Tuấn Thiện<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/6vVUc8KBNWexmJtQ8"
+                  target="_blank"
+                  >GFJQ+7XQ, Sơn Ninh, Hương Sơn, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/d770b1c9-45fa-4267-984b-1ae4bc40dd43-den-nguyen-tuan-thien-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích Hải Thượng Lãn Ông<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/gWapeEUkiBPfVpp6A"
+                  target="_blank"
+                  >GCHM+RH2, Sơn Trung, Hương Sơn, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/634d4761-3352-4b0e-ab90-f2a295b2eb22-khu-di-tich-hai-thuong-lan-ongpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích lưu niệm Đại thi hào Nguyễn Du<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/5EyBLqsxoZugvbLD7"
+                  target="_blank"
+                  >MQ78+XPV, ĐT541, Tiên Điền, Nghi Xuân, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/1adb0d0b-d113-4ba5-8dc1-d4c307cc24e1-khu-di-tich-luu-niem-dai-thi-hao-nguyen-du-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Chùa Chân Tiên<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/KDKfg8jrPtxSQ6VL7"
+                  target="_blank"
+                  >GVF6+24C, Thịnh Lộc, Lộc Hà, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/e05875cc-e300-42b1-a4d6-c41146dca4bc-chua-chan-tien-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích mộ và đền thờ Nguyễn Lỗi<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/zi6fHQYSVF6zJYGS9"
+                  target="_blank"
+                  >GGC4+JQF, Châu Bình, Hương Sơn, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/f1b0438d-cefa-4330-be35-6a17ed51cbcb-di-tich-mo-va-den-tho-nguyen-loi-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích đền thờ Đô Đài Bùi Cầm Hổ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/63ckDPP46NM4jJ588"
+                  target="_blank"
+                  >GP6F+JR2, Đậu Liên, Hồng Lĩnh, Hà Tĩnh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/2c9f3ae2-3168-4bbb-8b13-f9a79b488690-den-tho-do-dai-bui-cam-ho-ha-tinhpng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ha-tinh/top-10-di-tich-lich-su-tai-ha-tinh-ban-khong-nen-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Ca trù<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://ticketgo.vn/photos/2378/6308e18b1cd06.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://www.ticketgo.vn/blog/hat-ca-tru-net-dep-van-hoa-di-san-phi-vat-the-can-duoc-bao-ve-khan-cap-cua-viet-nam"
+                      target="_blank"
+                      >ticketgo.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội cầu ngư Nhượng Bạn<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://hatinh.gov.vn/uploads/topics/16521549974943.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://hatinh.gov.vn/bien-dao-viet-nam/tin-bai/12452/le-hoi-cau-ngu-nhuong-ban-duoc-dua-vao-danh-muc-di-san-van-hoa-phi-vat-the-cap-quoc-gia"
+                      target="_blank"
+                      >hatinh.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Dân ca Ví, Giặm Nghệ Tĩnh<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://bna.1cdn.vn/thumbs/1200x630/2024/11/26/dan-ca-vi-giam-nghe-tinh-duoc-unesco-ghi-danh-la-di-san-van-hoa-phi-vat-the-dai-dien-cua-nhan-loai.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dbndnghean.vn/nghe-an-thong-qua-du-thao-de-an-bao-ve-va-phat-huy-gia-tri-di-san-dan-ca-vi-giam-nghe-tinh-14543.htm"
+                      target="_blank"
+                      >dbndnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Chiêu Trưng<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/R.f488e619beba57b4cf1cdea51c623920?rik=jeRtOTvJtTgfcg&pid=ImgRaw&r=0"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://hatinh.gov.vn/le-hoi-den-chieu-trung-net-dep-van-hoa-moi-goi-nguoi-ve"
+                      target="_blank"
+                      >hatinh.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Hải Thượng Lãn Ông<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://hatinh.gov.vn/uploads/topics/17253194866210.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://hatinh.gov.vn/tin-tuc-su-kien/tin-bai/20851/phat-huy-gia-tri-di-san-hai-thuong-lan-ong-trong-phat-trien-du-lich-ha-tinh"
+                      target="_blank"
+                      >hatinh.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        </header>
+        <article>
+          <p>
+            <strong
+              ><mark
+                >1. Vai trò lịch sử của giáo dục Thăng Long – Hà Nội</mark
+              ></strong
+            ><br />
+            Từ nhiều thế kỷ, nhờ vị thế kinh đô, Thăng Long – Hà Nội trở thành
+            trung tâm giáo dục của Việt Nam. Từ giữa thế kỷ XV đến cuối thế kỷ
+            XIX, Hà Nội là một trong những địa điểm chính tổ chức các kỳ thi
+            khoa bảng nhằm tuyển chọn nhân tài cho bộ máy quan lại, dù số lượng
+            trạng nguyên thấp hơn các vùng như <u>Bắc Ninh</u>,
+            <u>Hải Dương</u> và <u>Nam Định</u>.
+          </p>
+
+          <p>
+            <strong><mark>2. Giáo dục thời Pháp thuộc</mark></strong
+            ><br />
+            Trong thời kỳ Pháp thuộc, Hà Nội là thủ đô của Liên bang Đông Dương
+            và là trung tâm giáo dục của khu vực. Người Pháp xây dựng nhiều cơ
+            sở đào tạo quan trọng như <u>Viện Đại học Đông Dương</u>,
+            <u>Trường Y khoa Đông Dương</u> và <u>Trường Bách nghệ Hà Nội</u>,
+            đặt nền móng cho giáo dục đại học hiện đại ở Việt Nam.
+          </p>
+
+          <p>
+            <strong><mark>3. Giáo dục phổ thông</mark></strong
+            ><br />
+            Năm <u>2009</u>, Hà Nội có <u>677</u> trường tiểu học,
+            <u>581</u> trường trung học cơ sở và <u>186</u> trường trung học phổ
+            thông với tổng cộng <u>27.552</u> lớp học và <u>982.579</u> học
+            sinh. Hệ thống THPT gồm <u>40</u> trường công lập, <u>65</u> trường
+            dân lập và <u>5</u> trường bán công, trong đó có nhiều trường danh
+            tiếng như THPT chuyên Hà Nội – Amsterdam, Chu Văn An, Nguyễn Huệ và
+            Trần Phú.
+          </p>
+
+          <p>
+            <strong
+              ><mark>4. Trường trung học chuyên và xóa mù chữ</mark></strong
+            ><br />
+            Hà Nội có <u>3</u> trường THPT chuyên trực thuộc đại học gồm THPT
+            chuyên Ngoại ngữ, THPT chuyên Khoa học Tự nhiên và THPT chuyên Đại
+            học Sư phạm Hà Nội. Sau khi sáp nhập Hà Tây, năm <u>2008</u> Hà Nội
+            có gần <u>235.000</u> người mù chữ trên tổng <u>1,7 triệu</u> người
+            mù chữ của cả nước, nhưng đến năm <u>2017</u> đã hoàn thành chương
+            trình xóa mù chữ mức độ 2.
+          </p>
+
+          <p>
+            <strong><mark>5. Giáo dục đại học</mark></strong
+            ><br />
+            Hà Nội là một trong hai trung tâm giáo dục đại học lớn nhất Việt Nam
+            với trên <u>50</u> trường đại học. Năm <u>2007</u>, thành phố có
+            <u>606.207</u> sinh viên, riêng Hà Tây có <u>29.435</u> sinh viên.
+            Nhiều trường đại học hàng đầu như Đại học Quốc gia Hà Nội, Đại học
+            Bách khoa Hà Nội, Đại học Y Hà Nội giữ vai trò quan trọng trong đào
+            tạo nguồn nhân lực.
+          </p>
+
+          <p>
+            <strong><mark>6. Bất cập và định hướng phát triển</mark></strong
+            ><br />
+            Giáo dục đại học Hà Nội còn tồn tại nhiều bất cập như quá tải, thu
+            hẹp khuôn viên trường và sử dụng chưa hiệu quả ký túc xá. Để khắc
+            phục, Đại học Quốc gia Hà Nội đang triển khai khu đô thị đại học Hòa
+            Lạc với diện tích hơn <u>1.100 ha</u>, dự kiến phục vụ khoảng
+            <u>60.000</u> sinh viên, hướng tới môi trường học tập và nghiên cứu
+            hiện đại.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/H%E1%BA%A3i_Ph%C3%B2ng"
+            >wiki-Hải Phòng</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        </header>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ HÀ TĨNH</h2>
+          <p>
+            <strong><mark>Khu kinh tế Vũng Áng</mark></strong> được xem là khu
+            kinh tế ven biển trọng điểm quốc gia, với sản phẩm công nghiệp chủ
+            lực là <u>thép (22,5 triệu tấn)</u>, <u>nhiệt điện (7000 MW)</u> và
+            dịch vụ cảng nước sâu với <u>59 cầu cảng</u> cho tàu từ
+            <u>5 vạn đến 30 vạn tấn</u> cập bến.[33]
+          </p>
+
+          <p>
+            <strong><mark>Khu kinh tế cửa khẩu quốc tế Cầu Treo</mark></strong>
+            là một trong những khu kinh tế cửa khẩu được Chính phủ Việt Nam ưu
+            tiên phát triển. Khu kinh tế này gắn với cửa khẩu quốc tế Cầu Treo
+            trên <u>quốc lộ 8</u> thuộc địa bàn huyện Hương Sơn.[1]
+          </p>
+        </article>
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <figcaption>
+            <h2 style="text-align: center">Biểu đồ GRDP Hà Tĩnh 2016–2024</h2>
+            <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+          </figcaption>
+          <canvas id="grdpChartHaTinh" class="w3-center"></canvas>
+        </figure>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document
+            .getElementById("grdpChartHaTinh")
+            .getContext("2d");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Hà Tĩnh (tỷ đồng)",
+                  data: [
+                    1195.7, 1231.5, 1270.2, 1310.8, 1342.6, 1375.3, 1402.1,
+                    1435.0, 1460.5,
+                  ],
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: [3.1, 3.0, 3.2, 3.1, 2.4, 2.4, 1.9, 2.4, 1.8],
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế Hà Tĩnh (2016–2024)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: {
+                  title: { display: true, text: "Năm" },
+                },
+              },
+            },
+          });
+        </script>
+
+        <p>
+          <strong>Lưu ý:</strong>
+          <em
+            >số liệu các năm trên chỉ là ước tính, dựa trên tốc độ tăng trưởng
+            GRDP trung bình và dữ liệu trên wiki</em
+          >
+        </p>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+            target="_blank"
+            >Wikipedia – Hà Tĩnh</a
+          >)
+        </p>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+          <h2>-Hà Tĩnh có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gỏi cá đục
+              </summary>
+              <p>
+                Tiếp đến là món gỏi cá đục, món này bạn không được bỏ qua khi
+                đến Hà Tĩnh nhé. Những con cá đục làm gỏi luôn tươi ngon, dài
+                tầm 13-18cm. Loại cá này có đặc điểm thịt rất chắc, lại ngọt
+                thịt vì thế làm giỏi rất ngon.
+              </p>
+              <p>
+                Các đục thì hầu như mùa nào cũng có vì thế bạn đến Hà Tĩnh vào
+                mùa nào thì cũng thưởng thức được món gỏi thơm ngon này.
+              </p>
+              <p>
+                Gỏi cá đục được ăn kèm với các loại rau thơm và các loại lá khác
+                như lá sung, lá đinh lăng, xoài non,... Khi ăn món gỏi cá đục
+                này thì phải ăn kèm thêm một ít bánh đa nem cuốn rau với cá mới
+                đúng chuẩn người dân Hà Tĩnh.
+              </p>
+              -Giá tham khảo:Khoảng 100.000 - 200.000VNĐ/ 1 phần <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/idiwsiRfrHZtcrtf9"
+                >9VVQ+VFR, Thạch Hạ, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202107011918578318.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Ram bánh mướt
+              </summary>
+              <p>
+                Tiếp theo chính là món ram bánh mướt, món này là sự kết hợp hoàn
+                hảo của hai loại bánh truyền thông chính là bánh cuốn và bánh
+                mướt. Tuy đơn giản thôi nhưng tạo ra được một món ăn vừa tinh tế
+                vừa bổ dưỡng nữa chứ.
+              </p>
+              <p>
+                Ăn kèm với ram bánh mướt đó chính là rau và chả, tuy nhiên ram
+                bánh mướt chỉ cần chấm nước mắm thôi là đủ thơm ngon rồi. Bạn có
+                thể thử cách ăn khác bằng cách cuốn ram với bánh ướt rồi chấm
+                nước chấm tỏi ớt, hương vị cũng rất tuyệt vời đấy nhé.
+              </p>
+              -Giá tham khảo:Khoảng 50.000 - 75.000 VNĐ/ 1 phần ăn <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/9kiKgsG2Tza4GxeL7"
+                >68 Nguyễn Công Trứ, Tân Giang, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202107011920356634.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bún bò Đức Thọ
+              </summary>
+              <p>
+                Nếu đến Hà Tĩnh mà bỗng nhiên thèm ăn bún bò thì vẫn được đáp
+                ứng ngay bạn nhé. Khác với món bún bò Huế thì bún bò Hà Tĩnh có
+                hương vị và sắc thái riêng biệt.
+              </p>
+              <p>
+                Bún bò Đức Thọ Hà Tĩnh nổi tiếng với nước lèo thơm ngọt từ thịt
+                xương ống và đuôi bò. Bún bò nơi đây được chủ quán làm rất cẩn
+                thận đảm bảo an toàn vệ sinh thực phẩm. Ăn miến bún thêm chút
+                thịt bò cùng mùi hương của hành lá, mùi tàu,.. tất cả làm nên tô
+                bún bò thơm ngon chất lượng.
+              </p>
+              -Giá tham khảo:Khoảng 50.000 - 100.000 VNĐ/ 1 phần ăn <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/KcEjR2z5JvjmNt1a6"
+                >Đ. Lê Đại Hành, Thị xã, Thị xã Kỳ Anh, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202107011921578940.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Món súp lươn
+              </summary>
+              <p>
+                Đặc sản súp lươn là phải nhớ ngay đến Nghệ An. Tuy nhiên người
+                Hà Tĩnh lại có cách chế biến độc đáo nên khách du lịch rất thích
+                món ăn này.
+              </p>
+              <p>
+                Thịt lươn tươi ngon được cắt miếng vừa ăn và xào lên (không quá
+                khô hoặc quá chín). Khi xào thịt lương thì cho thêm ít gia vị
+                cho thấm đều vào miến lươn. Các gia vị có thể thêm vào như hành,
+                ớt, tỏi, nghệ, tiêu,...
+              </p>
+              <p>
+                Sau đó thì phần thịt này sẽ được đi nấu súp. Chính vì cách nấu
+                công phu như thế mà cho ra tô súp lươn đặc trưng riêng của người
+                Hà Tĩnh.
+              </p>
+              -Giá tham khảo: Khoảng 150.000 - 250.000 VNĐ/ 1 phần ăn<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/s9EftraSApa3Krgs8"
+                >Ngõ 1 đường Phan Đình Phùng, Nam Hà, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202107011923196360.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh bèo Hà Tĩnh
+              </summary>
+              <p>
+                Bánh bèo là món bánh quen thuộc, từng vùng miền sẽ có cách chế
+                biến khác nhau. Bánh bèo Hà Tĩnh có điểm độc đáo riêng, nó có
+                phần vỏ trong suốt, phần nhân thơm ngon với thịt tôm, mộc nhĩ,
+                thịt heo băm đầy đặn. Kết hợp với nước chấm chua ngọt đặc sắc
+                của vùng này ăn rất ngon, đáng để thử khi du lịch tại Hà Tĩnh.
+              </p>
+              -Giá tham khảo:10.000 – 25.000đ/ phần <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/XuR8GpN7Sgfqnkkn9"
+                >GPJ2+W57, Ba Tháng Hai, bắc Hồng, Hồng Lĩnh, Hà Tĩnh,
+                Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181530046655.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Hến sông La
+              </summary>
+              <p>
+                Dòng sông La chảy ngang qua đất Hà Tĩnh, nuôi dưỡng vùng đất này
+                bằng những nguồn thủy sản dồi dào, đem đến tài nguyên phong phú
+                cho đất Hà Tĩnh, trong đó có con hến, một loại thủy sản khi du
+                lịch tại đây mà bạn sẽ dễ bắt gặp.
+              </p>
+              <p>
+                Sau khi sơ chế sạch sẽ, những con hến sẽ được chế biến thành
+                nhiều món đặc sản sẽ làm bạn mê thích, thịt hến ngọt thanh, dai
+                dai, càng ăn càng nghiền góp phần tô điểm thêm cho ẩm thực Hà
+                Tĩnh.
+              </p>
+              -Giá tham khảo: 90.000 – 100.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/buRKW9BLb4XtbCnCA"
+                >97 Đặng Dung, Tân Giang, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181528473434.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mực nhảy Vũng Áng
+              </summary>
+              <p>
+                Ngoài thịt hến thì bạn có thể nếm thử món mực tươi sống Vũng
+                Áng, hầu như các du khách đến Hà Tĩnh đều nếm món này một lần
+                trong đời.
+              </p>
+              <p>
+                Mực nhảy Vũng Áng ghi điểm bởi thịt ngọt tươi, kích thước to,
+                dày và trắng rất hấp dẫn, đến Hà Tĩnh thì ngoài hến thì mực nhảy
+                Vũng Áng cũng có trong thực đơn của nhiều nhà hàng.
+              </p>
+              -Giá tham khảo: 650.000 – 800.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/W6yvvGca5AEWhb6s6"
+                >Cảng Vũng Áng, xã Kỳ Lợi, Thị xã Kỳ Anh, Hà Tĩnh 18796,
+                Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181527072072.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh ngào
+              </summary>
+              <p>
+                Món bánh ngào nhìn tương tự như bánh trôi nước hay bánh nhót,
+                món bánh ngào mang đậm đặc sắc ẩm thực vùng Hà Tĩnh với bột nếp
+                được nhào nặn kỹ lượng thành từng viên thon dài, ăn với nước
+                đường mía, đậu phộng, gừng sợi. Món có vị béo thơm, làm ai ăn
+                cũng nghiền.
+              </p>
+              -Giá tham khảo:~10.000 – 15.000 ₫/phần <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/buRKW9BLb4XtbCnCA"
+                >97 Đặng Dung, Tân Giang, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181525508756.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Sữa chua Lộc Chương
+              </summary>
+              <p>
+                Nếu vịnh Hạ Long nổi tiếng với món sữa chua Hạ Long béo mịn thì
+                Hà Tĩnh cũng có riêng món sữa chua Lộc Chương thơm ngon không
+                kém, món sữa chua này được ủ chua bằng phương pháp bí truyền của
+                vùng đất Lộc Chương, tạo nên những mẻ sữa chua thanh nhiệt, ngọt
+                mát, bổ dưỡng.
+              </p>
+              -Giá tham khảo:~ 15.000 – 25.000 ₫/ly <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/wY8b2qeABvjdCoLx9"
+                >28 Nguyễn Huy Tự, Bắc Hà, Tp. Hà Tĩnh, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181523233234.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cháo canh
+              </summary>
+              <p>
+                Ẩm thực của đất Hà Tĩnh rất đặc sắc với nhiều món lạ, món cháo
+                canh cũng như thế, nghe tên thôi đã thấy lạ rồi, đã cháo gạo rồi
+                sao còn có canh trong đấy.
+              </p>
+              <p>
+                Thế nhưng món này độc lạ ở chỗ là cái tên một đằng mà món ăn một
+                nẻo, ở đây chính là những sợi bún được nặn từ bột mì, rồi đem
+                nấu chín, ăn chung nước dùng đặc biệt, thêm hải sản hay thịt tùy
+                thích là ăn được rồi.
+              </p>
+              <p></p>
+              Quả thật nhiều món nghe tên thấy lạ mà ăn thử càng thấy lạ hơn
+              nhưng mà rất ngon nha, nên thử một lần cho biết nếu đi du lịch Hà
+              Tĩnh. -Giá tham khảo:~30.000 – 40.000 ₫/tô <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/wXCsCRzfp3wqztjo9"
+                >9V3W+GV8, Đ, Phan Kính, Thạch Quý, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181522114793.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bún thịt nướng Hà Tĩnh
+              </summary>
+              <p>
+                Bún thịt nướng hay chả nướng theo địa phương tại Hà Tĩnh cũng
+                khá lạ với những món bún mà chúng ta thường thấy tại miền Nam
+                hay miền Bắc, món bún thịt nướng ở đây gồm bún trắng, thịt nướng
+                và nước tương, rau sống. Đặc trưng nhất của món này chính là
+                phần tương ăn kèm sánh mịn và thịt nướng thì mềm, không quá dai
+                hay quá mỡ còn mềm tạo nên hương vị khó phai khi dùng.
+              </p>
+              -Giá tham khảo:Khoảng 40.000 - 50.000 đồng/tô. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/KSGwxLENXdfTfWEJ7"
+                >21 La Sơn Phu Tử, Nguyễn Du, Hà Tĩnh, 45114, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181520471251.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nhút Mít Hương Sơn
+              </summary>
+              <p>
+                Nhút là món đặc sản tại miền Trung và cũng là món đặc sắc tại Hà
+                Tĩnh, món nhút mít làm từ xơ mít khi quả mít còn xanh, sơ chế
+                sạch và nếm nếp với muối,..., rồi ủ trong 4 ngày để ra thành
+                phẩm là món nhút mít ngọt thanh của xớ mít, pha chút mặn mặn và
+                chua thanh hấp dẫn, thường ăn kèm với món luộc hay món xào khá
+                bắt vị.
+              </p>
+              -Giá tham khảo: 30.000 – 40.000 đồng/hũ (khoảng 200–300 g)<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/P38pAjtLbVriFk9U7"
+                >Hương Khê District, Ha Tinh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181519355732.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Kẹo cu đơ
+              </summary>
+              <p>
+                Kẹo cu đơ là một món ăn vặt mà du khách không nên bỏ qua khi có
+                dịp đến Hà Tĩnh. Đây được coi là đặc sản nổi tiếng dùng để làm
+                quà biếu tặng cho người thân.
+              </p>
+              <p>
+                Một số đặc điểm nổi bật của loại kẹo này chính là có lớp ngoài
+                nhìn thô ráp, sần sùi nhưng bên trong lại giòn, ngọt. Loại kẹo
+                này có hương vị đậm đà, thơm nồng của gừng tươi hòa lẫn trong đó
+                là chút béo béo của đậu phộng nữa chứ.
+              </p>
+              -Giá tham khảo: Khoảng 100.000 - 400.000 VNĐ tùy hộp với số lượng
+              khác nhau <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/ceuKANrHjAGfHo5P9"
+                >548a Đ. Hà Huy Tập, Đại Nài, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202112281737517029.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh đa vừng Hà Tĩnh
+              </summary>
+              <p>
+                Món bánh đa vừng là một trong những đặc sản trứ danh của đất Hà
+                Tĩnh, miếng bánh tráng giòn rụm, chứa đầy vừng đen, khi nướng
+                lên thơm nức mũi, nếm thử cảm nhận rõ vị béo bùi của vừng đen,
+                món này ăn không chỉ ngon mà còn tốt cho cơ thể, có thể chế biến
+                thành nhiều món khác nhau nữa đấy, mua về làm quà cho bạn bè,
+                người thân rất lý tưởng.
+              </p>
+              -Giá tham khảo: Khoảng 20.000 đồng - 50.000 đồng/10 cái <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/aB3WzAB4PVpfPVV3A"
+                >Unnamed Road, Kỳ Giang, Kỳ Anh, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181536162425.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bưởi Phúc Trạch
+              </summary>
+              <p>
+                Bạn có thể mua bưởi Phúc Trạch của vùng Hương Khê Hà Tĩnh về làm
+                quà cho người thân. Đây là loại bưởi nổi tiếng khắp cả nước bởi
+                lớp vỏ mỏng mịn, phần thịt mọng nước, ngọt thanh, vỏ quả bưởi
+                chứa nhiều tinh dầu nên có thể chế biến thành nhiều sản phẩm
+                khác.
+              </p>
+              <p>
+                Ngoài ra, cái tên “Phúc Trạch” của loại bưởi này cũng giúp nó
+                vang danh xa, nó mang ý nghĩa gia đạo êm ấm, hạnh phúc, nhờ đó
+                mà giúp người dân vùng Hương Khê “ăn nên làm ra”.
+              </p>
+              -Giá tham khảo: Khoảng 60.000 đồng - 100.000 đồng/quả<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/pyBrz8aKo7cAB8Wr5"
+                >Hương Khê, Hương Khê District, Ha Tinh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181535193593.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cam bù Hương Sơn
+              </summary>
+              <p>
+                Hà Tĩnh còn có món cam bù Hương Sơn, đây là đặc sản của huyện
+                Hương Sơn. Những quả cam ở đây có mùi vị đặc trưng, ngọt ngào,
+                các tép cam lớn, kích thước to và có màu vàng đẹp mắt, chứa
+                nhiều hàm lượng dinh dưỡng nên nó được xem như một đặc sản không
+                thể bỏ qua khi đến du lịch Hà Tĩnh.
+              </p>
+              -Giá tham khảo: Khoảng 40.000 đồng/ kg <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/xD3oqjQSo1FCzXon8"
+                >97 Đặng Dung, Tân Giang, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181534125690.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh gai làng Khóng
+              </summary>
+              <p>
+                So với bánh gai xứ Thanh Hóa thì bánh gai sản xuất tại làng
+                Khóng dày và dai hơn nhiều. Người dân làng Khóng làm cái nghề
+                làm bánh gai qua 50 năm và thành công đem nó trở thành một đặc
+                sản nổi tiếng mà nhiều khách du lịch yêu thích lựa chọn đem về
+                làm quà biếu.
+              </p>
+              <p>
+                Bánh gai làng Khóng có lớp vỏ bánh màu đen tuyền quyến rũ, được
+                làm từ lá gai trồng ngay tại địa phương, cắn một miếng cảm nhận
+                được vị ngọt thanh, nhân đậu xanh bên trong béo bùi cực ngon
+                lành, thích hợp mua về làm quà.
+              </p>
+              -Giá tham khảo: Khoảng 3.000 - 5.000 đồng/cái <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/fyDuGHq7TPaC1qKSA"
+                >GHFX+WVR, TT. Đức Thọ, Đức Thọ, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181533244393.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Rượu nếp Can Lộc
+              </summary>
+              <p>
+                Đây là đặc sản được xếp vào danh sách những loại rượu ngon và
+                nổi tiếng đất Việt. Rượu Can Lộc được ủ từ 100% gạo nếp kết hợp
+                với nguồn nước tinh khiết thiên nhiên, quy trình khép kín, đảm
+                bảo chất lượng và an toàn thực phẩm. Nếu bạn đang tìm đặc sản về
+                làm quà cho bố, đồng nghiệp thì đây món có thể lựa chọn
+              </p>
+              -Giá tham khảo: Khoảng 50.000 đồng/500ml <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/1iuePQH1QbE7fyuq5"
+                >Đoài Duyệt, Can Lộc District, Ha Tinh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181531578108.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Hồng Đông Lộ
+              </summary>
+              <p>
+                Ngày xưa, đất Hà Tĩnh thường tiến cống Hồng Đông Lộ cho vua, từ
+                đó loại hồng có hình dáng đặc biệt là hình vuông, thịt giòn và
+                ngọt, vỏ màu vàng và bóng mịn nổi tiếng khắp cả nước đến ngày
+                nay. Quả hồng Đông Lộ này vẫn được xem là loại đặc sản nên thử
+                mua về làm quà biếu tặng ý nghĩa cho gia đình, bạn bè.
+              </p>
+              -Giá tham khảo: Khoảng 70.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/DpwGGJMk3MPebePG9"
+                >8VP6+WCQ, Thạch Đài, Thạch Hà, Hà Tĩnh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364807/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-202206181531130267.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/dac-san-ha-tinh-va-cac-mon-ngon-khong-the-bo-qua-1364807"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+          <h2>-Hà Tĩnh có những điểm du lịch nổi tiếng như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Danh thắng núi Hồng Lĩnh – sông La
+              </summary>
+              <p class="detail-content">
+                Nhắc đến các địa điểm du lịch Hà Tĩnh chắc chắn không thể bỏ qua
+                núi Hồng Lĩnh và sông La. Hai địa danh này được xem là biểu
+                tượng của mảnh đất Hà Tĩnh. Sông La dài 12,5 km, là một phụ lưu
+                của sông Lam, chảy qua huyện Đức Thọ cũ. Dòng sông La hiền hòa
+                uốn lượn quanh chân núi, tạo nên một khung cảnh thiên nhiên thơ
+                mộng và trữ tình.
+              </p>
+              <p>
+                Núi Hồng Lĩnh Hà Tĩnh sừng sững như một bức tường thành kiên cố,
+                ôm ấp dòng sông La. Nơi đây không chỉ thu hút du khách bởi vẻ
+                đẹp hùng vĩ của thiên nhiên hoang sơ mà còn bởi các ngôi đền,
+                chùa, miếu linh thiêng tọa lạc trên đỉnh núi.
+              </p>
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/danh-thang-nui-hong-song-la-ha-tinh-1536x879.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Thiên Cầm – điểm du lịch biển Hà Tĩnh hút khách
+              </summary>
+              <p class="detail-content">
+                Biển Thiên Cầm là một trong những bãi biển đẹp nhất miền Trung
+                với làn nước trong xanh và bờ cát trắng trải dài. Du khách đến
+                đây có thể thỏa sức tắm biển, tham gia các hoạt động vui chơi
+                giải trí trên biển như lướt ván, moto nước, hay đơn giản là nằm
+                dài trên bờ cát, tận hưởng ánh nắng mặt trời và làn gió biển mát
+                rượi.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/bien-thien-cam-ha-tinh-1536x1012.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đèo Ngang – địa điểm du lịch ở Hà Tĩnh cho team mê phượt
+              </summary>
+              <p class="detail-content">
+                Đèo Ngang là địa điểm du lịch Hà Tĩnh lý tưởng cho các tín đồ mê
+                phượt và khám phá. Đèo có độ dài hơn 6 km, cao 250 m so với mực
+                nước biển. Con đường đèo quanh co uốn lượn, ôm ấp núi non hùng
+                vĩ. Đến với Đèo Ngang, du khách sẽ được chìm đắm trong thiên
+                nhiên thơ mộng và khám phá nhiều di tích lịch sử nổi tiếng như:
+                Hoành Sơn Quan, đền thờ Thánh Mẫu Liễu Hạnh…
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/deo-ngang-ha-tinh-1536x865.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Công viên nước VinWonders Hà Tĩnh Water Park
+              </summary>
+              <p class="detail-content">
+                VinWonders Hà Tĩnh Water Park là thiên đường giải trí nước, đem
+                lại trải nghiệm sảng khoái bất tận với vô số trò chơi hấp dẫn.
+                Hãy đập tan cái nóng mùa hè dưới làn nước mát lạnh của Bể tạo
+                sóng, nơi bạn có thể thả mình vào những con sóng nhân tạo như
+                thật. Nếu bạn là người yêu thích cảm giác mạnh, các siêu đường
+                trượt đầy thách thức đang chờ đợi bạn chinh phục.
+              </p>
+              <p>
+                Còn gì tuyệt vời hơn khi cả gia đình cùng tham gia những trò
+                chơi nước thú vị, tạo nên những khoảnh khắc vui vẻ không thể
+                quên. Đừng quên khám phá bầu trời trong xanh và ngắm nhìn toàn
+                cảnh bãi biển Xuân Hải – Lộc Hà từ độ cao 70m trên Vòng xoay
+                thời gian, mang lại cảm giác tự do và thư giãn tuyệt đối.
+                VinWonders Hà Tĩnh Water Park hứa hẹn sẽ là điểm đến lý tưởng
+                cho một mùa hè đầy sắc màu và năng động.
+              </p>
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/cong-vien-nuoc-vinwonders-ha-tinh.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu di tích Hải Thượng Lãn Ông
+              </summary>
+              <p class="detail-content">
+                Hà Tĩnh có những điểm du lịch nào? – Câu trả lời dành cho bạn là
+                khu di tích Hải Thượng Lãn Ông. Đây là địa điểm du lịch tâm linh
+                và văn hóa thu hút đông đảo du khách trong và ngoài nước. Quần
+                thể Khu di tích Hải Thượng Lãn Ông Hà Tĩnh bao gồm khu mộ và
+                tượng đài; nhà thờ và khu tưởng niệm. Đến đây, du khách không
+                chỉ được tìm hiểu về cuộc đời và sự nghiệp y học của danh y Lê
+                Hữu Trác mà còn có cơ hội khám phá phong cảnh sơn thủy hữu tình,
+                bốn mùa “thông reo, gió hát”.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/khu-di-tich-hai-thuong-lan-ong.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Làng cá Cửa Nhượng
+              </summary>
+              <p class="detail-content">
+                Nhắc đến các địa điểm du lịch Hà Tĩnh thú vị thì chắc chắn không
+                thể bỏ qua Làng cá Cửa Nhượng. Làng chài nằm gần biển với vẻ đẹp
+                bình dị, dân dã. Du khách đến đây sẽ được trải nghiệm cuộc sống
+                của người dân làng chài, thưởng thức nhiều loại hải sản tươi
+                ngon và check in khung cảnh hoàng hôn lãng mạn trên bờ biển.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/lang-ca-cua-nhuong-ha-tinh-1536x991.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Chùa Hương Tích – điểm du lịch tâm linh nổi tiếng Hà Tĩnh
+              </summary>
+              <p class="detail-content">
+                Chùa Hương Tích nổi tiếng với lịch sử lâu đời và kiến trúc độc
+                đáo. Chùa được xây dựng khoảng thế kỷ XIII, trải qua nhiều lần
+                trùng tu, sửa chữa và lưu giữ nhiều giá trị văn hóa, lịch sử quý
+                báu. Chùa Hương Tích được bao quanh bởi núi non hùng vĩ. Để đến
+                chùa, du khách có thể đi cáp treo hoặc trải nghiệm leo bộ qua
+                các rừng thông, vừa đi vừa ngắm cảnh.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/chua-huong-tich-ha-tinh-1536x893.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đồi chè Kỳ Trung trong lành, khoáng đạt
+              </summary>
+              <p class="detail-content">
+                Đồi chè Kỳ Trung có tuổi đời hơn 40 năm, được trồng trên diện
+                tích rộng lớn lên đến 160 ha. Thời gian lý tưởng nhất để đến với
+                địa điểm du lịch Hà Tĩnh – đồi chè Kỳ Trung là vào mùa xuân. Lúc
+                này, những búp chè non nhú xanh mơn mởn, phủ kín đồi núi. Du
+                khách đến đây có thể dạo bước giữa những hàng chè xanh, hít thở
+                bầu không khí trong lành và tận hưởng khung cảnh thiên nhiên
+                tuyệt đẹp.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/doi-che-ky-trung-ha-tinh.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Xuân Hải đẹp hoang sơ, yên bình
+              </summary>
+              <p class="detail-content">
+                Nếu bạn đang thắc mắc du lịch Hà Tĩnh có gì đẹp thì hãy ghé bãi
+                biển Xuân Hải để tận hưởng không gian thanh bình. Đây là bãi
+                biển hiếm hoi ở Hà Tĩnh còn giữ được nét đẹp hoang sơ, chưa bị
+                khai thác nhiều. Biển Xuân Hải bằng phẳng, sóng êm, nước trong
+                xanh, thích hợp cho các hoạt động bơi lội, tắm biển và tổ chức
+                cắm trại, picnic trên bãi biển.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/bien-xuan-hai-ha-tinh-1536x1152.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Thạch Hải
+              </summary>
+              <p class="detail-content">
+                Biển Thạch Hải là địa điểm du lịch Hà Tĩnh thu hút hàng ngàn du
+                khách ghé thăm bởi vị trí đắc địa cùng cảnh quan tự nhiên tuyệt
+                vời. Nơi đây “ghi điểm” tuyệt đối bởi không khí trong lành, vẻ
+                đẹp sơn thủy hữu tình cùng bãi cát trắng trải dài. Đến biển
+                Thạch Hải, du khách tha hồ tắm biển, check in và thưởng thức
+                nhiều loại hải sản hấp dẫn.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/CkJxxb0h-bien-thach-hai-ha-tinh-1536x1024.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                hùa Thiên Tượng
+              </summary>
+              <p class="detail-content">
+                Nếu bạn chưa biết Hà Tĩnh có địa điểm du lịch nào thì hãy thử
+                một lần đặt chân đến chùa Thiên Tượng – ngôi chùa cổ kính và
+                linh thiêng bậc nhất xứ Nghệ. Chùa được xây dựng từ thời nhà
+                Trần, trải qua nhiều thăng trầm và vẫn giữ nguyên được những giá
+                trị văn hóa, lịch sử quý báu. Đến đây, du khách không chỉ được
+                chiêm ngưỡng kiến trúc độc đáo mà còn được khám phá khung cảnh
+                thiên nhiên, núi non hùng vĩ bao bọc quanh chùa.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/chua-thien-tuong-ha-tinh-1536x1229.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Bãi biển Xuân Thành
+              </summary>
+              <p class="detail-content">
+                Nổi tiếng với vẻ đẹp hoang sơ, cách xa phố phường nhộn nhịp, bãi
+                biển Xuân Thành luôn là ưu tiên hàng đầu của du khách khi tìm
+                địa điểm vui chơi, nghỉ dưỡng trong dịp hè. Biển có độ nông vừa
+                phải, bờ cát trắng mịn, thích hợp cho các hoạt động bơi lội, tắm
+                biển. Du khách đến đây còn có cơ hội thưởng thức hải sản tươi
+                ngon và tham gia nhiều môn thể thao thú vị như: dù lượn, moto
+                nước…
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/bien-xuan-thanh-ha-tinh-1.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu di tích Trần Phú
+              </summary>
+              <p class="detail-content">
+                Khu di tích Trần Phú cũng là một trong những địa điểm du lịch Hà
+                Tĩnh nổi tiếng, thu hút nhiều du khách đến tham quan. Đây là nơi
+                lưu giữ những giá trị lịch sử và văn hóa to lớn gắn liền với
+                cuộc đời và sự nghiệp của vị Tổng Bí thư đầu tiên của Đảng Cộng
+                sản Việt Nam. Quần thể Khu di tích Trần Phú được chia làm 2 phần
+                là khu mộ và khu lưu niệm. Khuôn viên di tích rộng lớn, được bao
+                quanh bởi những hàng thông xanh ngát.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/khu-di-tich-tran-phu-ha-tinh.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Du lịch Hà Tĩnh nên đi đâu? Chùa Hang
+              </summary>
+              <p class="detail-content">
+                Danh thắng chùa Hang Hà Tĩnh tọa lạc trên dãy núi Hồng Lĩnh. Đây
+                là địa điểm du lịch tâm linh nổi tiếng, thu hút đông đảo du
+                khách về vãn cảnh, tịnh tâm. Để đến chùa, bạn phải đi theo con
+                đường lượn vòng quanh sườn núi, hai bên được bao phủ bởi rừng
+                thông bạt ngàn. Đến chùa Hang, du khách sẽ được chiêm ngưỡng
+                kiến trúc độc đáo của chùa, thắp hương, vãn cảnh và tận hưởng
+                không gian thanh tịnh nơi cửa Phật.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/chua-hang-ha-tinh-1536x1025.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đền Củi cổ kính, linh thiêng
+              </summary>
+              <p class="detail-content">
+                Địa điểm du lịch Hà Tĩnh đền Củi nổi tiếng linh thiêng và thu
+                hút hàng ngàn lượt du khách ghé thăm mỗi năm. Đền Củi được xây
+                dựng từ thời Hậu Lê, là điện thờ “Tam tòa thánh vị, Vạn thế mẫu
+                nghi”. Hằng năm vào ngày 3 tháng 3 Âm lịch đền diễn ra lễ hội
+                giỗ Thánh Mẫu và lễ hội đền Chợ Củi vào ngày 10 tháng 10 Âm
+                lịch. Sau nhiều lần trùng tu, tôn tạo, đền Củi trở nên khang
+                trang, xứng tầm là điểm đến tâm linh nổi tiếng của Hà Tĩnh.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/den-cui-ha-tinh-1-1536x1152.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Di tích Ngã Ba Đồng Lộc
+              </summary>
+              <p class="detail-content">
+                Ngã Ba Đồng Lộc là địa danh lịch sử nổi tiếng gắn liền với sự hy
+                sinh anh dũng của 10 cô gái thanh niên xung phong trong cuộc
+                chiến tranh chống Mỹ cứu nước. Khu di tích gồm nhiều hạng mục
+                như: Tượng đài 10 cô gái thanh niên xung phong, nhà tưởng niệm,
+                nghĩa trang liệt sĩ… Khu di tích lịch sử Ngã Ba Đồng Lộc là nơi
+                để du khách tìm hiểu về lịch sử hào hùng của dân tộc, tưởng nhớ
+                sự hy sinh anh dũng của các anh hùng liệt sĩ.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/nga-ba-dong-loc-ha-tinh.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu di tích Nguyễn Du
+              </summary>
+              <p class="detail-content">
+                Khu di tích Nguyễn Du là điểm đến thu hút đông đảo du khách, đặc
+                biệt là những ai yêu thích Truyện Kiều. Nơi đây không chỉ lưu
+                giữ mộ phần của Đại thi hào Nguyễn Du mà còn bao gồm quần thể di
+                tích dòng họ Nguyễn Tiên Điền. Ngoài ra còn có bảo tàng, nhà thờ
+                Nguyễn Du, đền Thờ Nguyễn Nghiễm, Nguyễn Trọng, Đại Vương tiến
+                sĩ Nguyễn Huệ cùng đàn tế Nguyễn Quỳnh.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/khu-di-tich-nguyen-du-1536x864.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn quốc gia Vũ Quang
+              </summary>
+              <p class="detail-content">
+                Địa điểm du lịch Hà Tĩnh Vườn Quốc gia Vũ Quang là điểm đến lý
+                tưởng cho những ai yêu thích khám phá thiên nhiên hoang sơ. Với
+                diện tích hơn 55.000 ha, đây là nơi sinh sống của hàng ngàn loài
+                động – thực vật quý hiếm. Bên trong vườn có đập thủy lợi Ngàn
+                Trươi. Đến đây, du khách có thể tham quan hồ và trải nghiệm
+                nhiều hoạt động như đi thuyền, tắm thác, cắm trại.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/vuon-quoc-gia-vu-quang-ha-tinh.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Hồ Kẻ Gỗ – điểm check in, cắm trại lý tưởng ở Hà Tĩnh
+              </summary>
+              <p class="detail-content">
+                Hồ Kẻ Gỗ Hà Tĩnh là địa điểm lý tưởng cho những ai yêu thích cắm
+                trại, picnic cùng gia đình, bạn bè. Mặc dù là hồ nước nhân tạo,
+                tuy nhiên hồ Kẻ Gỗ lại sở hữu vẻ đẹp hùng vĩ, thơ mộng. Đến đây,
+                du khách sẽ được hòa mình vào thiên nhiên, check in với cầu vượt
+                Kẻ Gỗ được bắt giữa hồ với hình chữ C uốn lượng hay ngồi thuyền
+                du ngoạn trên hồ.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/ho-ke-go-ha-tinh-1536x922.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Các khu du lịch sinh thái Hà Tĩnh không nên bỏ qua
+              </summary>
+              <p class="detail-content">
+                Ngoài các bãi biển thơ mộng hay di tích lịch sử, văn hóa nổi
+                tiếng, Hà Tĩnh còn có nhiều khu du lịch sinh thái hấp dẫn du
+                khách. Có thể kể đến như: Hồ Trại Tiểu, nhà vườn Đức Đường, Đồng
+                Nôi hay quần thể Khu du lịch sinh thái nước khoáng nóng Kim Sơn…
+                Các khu du lịch sinh thái đều mang đến nhiều trải nghiệm hấp dẫn
+                và thú vị cho du khách.
+              </p>
+
+              <figure>
+                <img
+                  src="https://static.vinwonders.com/production/khu-du-lich-sinh-thai-ho-trai-tieu-1536x864.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://vinwonders.com/vi/wonderpedia/news/dia-diem-du-lich-ha-tinh/"
+                    target="_blank"
+                  >
+                    vinwonders.com </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            TIỀM NĂNG PHÁT TRIỂN
+          </h1>
+        </header>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <strong><mark>1. Vị trí và hạ tầng</mark></strong
+            ><br />
+            Hà Tĩnh, đặc biệt là khu vực trung du và phía Tây như Hương Sơn, sở
+            hữu vị trí chiến lược quan trọng. Hai tuyến giao thông huyết mạch đi
+            qua địa phương là <u>Đường mòn Hồ Chí Minh</u> và <u>Quốc lộ 8A</u>,
+            nối Việt Nam với Lào qua Cửa khẩu Quốc tế Cầu Treo. Hệ thống hạ tầng
+            đường bộ, kênh mương, chiếu sáng được đầu tư nâng cấp, tạo điều kiện
+            thuận lợi cho phát triển kinh tế – xã hội và thu hút đầu tư.
+          </p>
+
+          <p>
+            <strong><mark>2. Kinh tế – xã hội</mark></strong
+            ><br />
+            Giai đoạn <u>2021–2025</u>, Hương Sơn ghi nhận tốc độ tăng trưởng
+            bình quân <u>7,79%/năm</u>, với cơ cấu kinh tế chuyển dịch theo
+            hướng giảm nông nghiệp, tăng thương mại, dịch vụ và tiểu thủ công
+            nghiệp. Thu nhập bình quân đầu người đạt khoảng
+            <u>62,27 triệu đồng/năm</u>, phản ánh mức sống được cải thiện. Xã
+            hội ổn định, với 100% thôn, tổ dân phố duy trì danh hiệu văn hóa và
+            tỷ lệ gia đình văn hóa đạt <u>96,57%</u>. Các chính sách lao động,
+            an sinh xã hội và giảm nghèo được triển khai đồng bộ, góp phần ổn
+            định đời sống người dân.
+          </p>
+
+          <p>
+            <strong><mark>3. Quỹ đất và tiềm năng đầu tư</mark></strong
+            ><br />
+            Việc mở rộng địa giới hành chính sau sáp nhập tạo thêm
+            <u>quỹ đất lớn</u>, mở ra dư địa để thu hút đầu tư vào thương mại,
+            công nghiệp và phát triển đô thị. Hương Sơn còn có nền văn hóa phong
+            phú, nhiều di tích lịch sử – nổi bật là quần thể di tích Hải Thượng
+            Lãn Ông Lê Hữu Trác – tạo tiềm năng phát triển
+            <u>du lịch văn hóa, tâm linh và trải nghiệm</u>.
+          </p>
+
+          <p>
+            <strong><mark>4. Chuyển đổi số và cải cách hành chính</mark></strong
+            ><br />
+            Địa phương tập trung mạnh vào <u>chuyển đổi số toàn diện</u> trong
+            quản lý và điều hành, nâng cao hiệu quả công việc, tăng tính liên
+            thông và tối ưu nguồn lực. Việc cải cách hành chính hướng tới phục
+            vụ người dân và doanh nghiệp tốt hơn, đồng thời hỗ trợ phát triển
+            kinh tế – xã hội bền vững.
+          </p>
+
+          <p>
+            <strong><mark>5. Định hướng phát triển 2025–2030</mark></strong
+            ><br />
+            Hương Sơn đặt mục tiêu tăng trưởng bình quân trên <u>11%/năm</u>,
+            thu nhập bình quân đầu người đạt trên <u>80 triệu đồng/năm</u> vào
+            <u>2030</u>. Địa phương phấn đấu hoàn thiện kết cấu hạ tầng, xây
+            dựng nông thôn mới nâng cao, phát triển các khu chức năng đô thị và
+            nâng cao chất lượng sống người dân. Việc kết hợp quy hoạch, chuyển
+            đổi số và huy động nguồn lực được xem là
+            <u>giải pháp đột phá</u> giúp Hà Tĩnh tăng tốc phát triển trong giai
+            đoạn tới.
+          </p>
+
+          <p>
+            <strong><mark>Kết luận</mark></strong
+            ><br />
+            Hà Tĩnh, với lợi thế về vị trí địa lý, hạ tầng phát triển, quỹ đất
+            rộng và tiềm năng du lịch, cùng với chính sách chuyển đổi số và cải
+            cách hành chính, đang trở thành vùng đất có **khả năng tăng tốc mạnh
+            mẽ về kinh tế – xã hội**. Giai đoạn tới, địa phương được kỳ vọng sẽ
+            đạt mức tăng trưởng cao, nâng cao chất lượng đời sống người dân và
+            phát triển bền vững.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="https://kinhtechungkhoan.vn/sau-sap-nhap-ha-tinh-dang-thay-doi-dien-mao-cho-vung-dat-32km2-phia-tay-voi-ha-tang-hien-dai-cung-tiem-nang-du-lich-lon-1415148.html"
+            target="_blank"
+            >kinhtechungkhoan.vn</a
+          >)
+        </p>
+      </section>
+      <hr />
+    </main>
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("w3-hide");
+      }
+    </script>
+  </body>
+</html>
