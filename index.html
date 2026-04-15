@@ -29,18 +29,15 @@
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
-
     <aside id="backToTop">
       <a href="#hero" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-
     <aside class="box w3-right neon-box2" style="margin-top: 2%">
       <p class="text">Chào mừng đến với tỉnh Hà Tĩnh!</p>
     </aside>
-
     <header class="w3-top">
       <nav class="w3-bar w3-white w3-padding w3-card">
         <a href="#home" class="w3-bar-item neon-box">Hà Tĩnh</a>
@@ -79,30 +76,6 @@
             <a href="https://giabao123123.github.io/trochoihatinh/">TRÒ CHƠI</a>
           </li>
         </ul>
-        <script>
-          const menuLinks = document.querySelectorAll("#menu-list a");
-          const menuToggle = document.getElementById("menu-toggle");
-          menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-              if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-              }
-            });
-          });
-        </script>
-        <script>
-          const audio = document.getElementById("bgMusic");
-          const btn = document.getElementById("toggleBtn");
-          btn.addEventListener("click", () => {
-            if (audio.paused) {
-              audio.play();
-              btn.textContent = "⏸ Tắt nhạc";
-            } else {
-              audio.pause();
-              btn.textContent = "▶ Phát nhạc";
-            }
-          });
-        </script>
         <nav
           style="
             background: linear-gradient(180deg, #ff9800, #ff5722);
@@ -143,19 +116,6 @@
         </nav>
       </nav>
     </header>
-    <script>
-      const menuScroll = document.querySelector(".menu-scroll");
-      const btnLeft = document.querySelector(".left-btn");
-      const btnRight = document.querySelector(".right-btn");
-      const step = 200;
-      btnRight.addEventListener("click", () => {
-        menuScroll.scrollLeft += step;
-      });
-      btnLeft.addEventListener("click", () => {
-        menuScroll.scrollLeft -= step;
-      });
-    </script>
-
     <main class="w3-content" style="max-width: 1100px">
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <header>
@@ -171,7 +131,6 @@
             triển của xứ Nghệ. Trong thời kỳ độc lập tự chủ dưới các triều Ngô,
             Đinh, Tiền Lê, vùng đất này thuộc Hoan Châu.
           </p>
-
           <p>
             <strong><mark>Thời Lý – Trần – Minh – Hậu Lê</mark></strong
             ><br />
@@ -181,7 +140,6 @@
             sáp nhập thành Nghệ An thừa tuyên, sau đổi thành xứ Nghệ An; phần
             đất Hà Tĩnh ngày nay thuộc hai phủ Đức Quang và Hà Hoa.
           </p>
-
           <p>
             <strong><mark>Biến động lãnh thổ đầu triều Nguyễn</mark></strong
             ><br />
@@ -190,7 +148,6 @@
             số vùng đất phía tây được tái sáp nhập và hệ thống hành chính được
             điều chỉnh.
           </p>
-
           <p>
             <strong><mark>Thành lập tỉnh Hà Tĩnh</mark></strong
             ><br />
@@ -198,7 +155,6 @@
             An và Hà Tĩnh. Từ đây, tỉnh Hà Tĩnh chính thức được thành lập, ban
             đầu gồm hai phủ Đức Thọ và Hà Hoa, sau đổi là phủ Hà Thanh.
           </p>
-
           <p>
             <strong><mark>Thay đổi hành chính thời hiện đại</mark></strong
             ><br />
@@ -206,7 +162,6 @@
             xã Hồng Lĩnh, huyện Vũ Quang, huyện Lộc Hà, thị xã Kỳ Anh và nâng
             thị xã Hà Tĩnh lên thành phố.
           </p>
-
           <p>
             <strong><mark>Cơ cấu hành chính hiện nay</mark></strong
             ><br />
@@ -214,13 +169,12 @@
             vào thành phố Hà Tĩnh và huyện Thạch Hà. Hiện nay, tỉnh Hà Tĩnh có
             <u>1</u> thành phố, <u>2</u> thị xã và <u>9</u> huyện.
           </p>
-
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a
               href="https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
               target="_blank"
-              >wiki Hà Tĩnh</a
+              >Wikipedia Hà Tĩnh</a
             >
             )
           </p>
@@ -329,7 +283,6 @@
             nam và bị chia cắt mạnh bởi hệ thống sông suối, tạo nên cấu trúc địa
             hình phức tạp và đa dạng.
           </p>
-
           <p>
             <strong><mark>Các vùng địa hình</mark></strong
             ><br />
@@ -339,7 +292,6 @@
             ven biển tương đối bằng phẳng, thuận lợi cho sản xuất nông nghiệp và
             khai thác biển.
           </p>
-
           <p>
             <strong><mark>Tài nguyên rừng</mark></strong
             ><br />
@@ -347,7 +299,6 @@
             <u>45%</u>. Rừng tự nhiên chủ yếu là rừng nhiệt đới, vùng núi cao có
             rừng á nhiệt đới, với nhiều loài gỗ quý và động vật hoang dã.
           </p>
-
           <p>
             <strong><mark>Tài nguyên biển</mark></strong
             ><br />
@@ -355,7 +306,6 @@
             nhiều loài cá, tôm và nhuyễn thể, thuận lợi cho phát triển đánh bắt
             và nuôi trồng thủy sản.
           </p>
-
           <p>
             <strong><mark>Sông ngòi và hồ chứa</mark></strong
             ><br />
@@ -364,7 +314,6 @@
             <u>400 km</u>, tổng sức chứa hồ chứa ước khoảng <u>13 tỷ m³</u>,
             giúp điều tiết nước, phòng chống thiên tai và phục vụ sản xuất.
           </p>
-
           <p>
             <strong><mark>Khoáng sản</mark></strong
             ><br />
@@ -399,7 +348,6 @@
             của khí hậu chuyển tiếp giữa miền Bắc và miền Nam. Nhiệt độ trung
             bình khoảng <u>24 °C - 24,8 °C</u>.
           </p>
-
           <p>
             <strong><mark>Mùa hè</mark></strong
             ><br />
@@ -409,7 +357,6 @@
             đợt bão kèm mưa gây ngập úng, lượng mưa lớn nhất có thể đạt
             <u>600 mm/ngày đêm</u>.
           </p>
-
           <p>
             <strong><mark>Mùa đông</mark></strong
             ><br />
@@ -754,6 +701,10 @@
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           DỰ BÁO THỜI TIẾT TRONG TỈNH
         </h1>
+        <p>
+          ⚠️ Dữ liệu thời tiết hiện vẫn theo đơn vị hành chính cũ — chưa cập
+          nhật sau sáp nhập tỉnh.
+        </p>
         <div
           style="
             max-width: 760px;
@@ -777,7 +728,6 @@
           >
             Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
           </p>
-
           <div
             style="position: relative; max-width: 440px; margin: 0 auto 22px"
           >
@@ -830,7 +780,6 @@
               "
             ></div>
           </div>
-
           <div
             id="tt-box"
             style="
@@ -867,7 +816,6 @@
             </div>
           </div>
         </div>
-
         <script>
           var TT_AREAS = [
             {
@@ -938,9 +886,7 @@
               .replace(/[\u0300-\u036f]/g, "")
               .replace(/đ/g, "d");
           }
-
           var ttFiltered = TT_AREAS.slice();
-
           function ttFilter() {
             var q = ttNorm(document.getElementById("tt-input").value.trim());
             ttFiltered = q
@@ -951,13 +897,11 @@
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttShow() {
             ttFiltered = TT_AREAS.slice();
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttRender() {
             var dd = document.getElementById("tt-drop");
             if (!ttFiltered.length) {
@@ -988,7 +932,6 @@
               })
               .join("");
           }
-
           function ttSelect(idx) {
             var a = TT_AREAS[idx];
             document.getElementById("tt-input").value = a.name;
@@ -997,13 +940,10 @@
             if (a.parent) {
               locationTitle += " (" + a.parent + ")";
             }
-
             document.getElementById("tt-name").textContent = locationTitle;
             document.getElementById("tt-box").style.display = "block";
-
             var wrap = document.getElementById("tt-widget-wrap");
             var noEmbed = document.getElementById("tt-noembed");
-
             if (a.widget && a.widget.trim()) {
               wrap.innerHTML = a.widget;
               wrap.style.display = "block";
@@ -1013,18 +953,38 @@
               wrap.style.display = "none";
               noEmbed.style.display = "block";
             }
-
             document
               .getElementById("tt-box")
               .scrollIntoView({ behavior: "smooth", block: "start" });
           }
-
           document.addEventListener("click", function (e) {
             var inp = document.getElementById("tt-input");
             var drop = document.getElementById("tt-drop");
             if (drop && e.target !== inp && !drop.contains(e.target))
               drop.style.display = "none";
           });
+          const menuScroll = document.querySelector(".menu-scroll");
+          const btnLeft = document.querySelector(".left-btn");
+          const btnRight = document.querySelector(".right-btn");
+          const step = 200;
+          btnRight.addEventListener("click", () => {
+            menuScroll.scrollLeft += step;
+          });
+          btnLeft.addEventListener("click", () => {
+            menuScroll.scrollLeft -= step;
+          });
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+          function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("w3-hide");
+          }
         </script>
       </section>
       <hr />
@@ -1215,7 +1175,6 @@
             nam <u>640.709 người</u>, nữ <u>648.157 người</u>. Tỷ lệ tăng tự
             nhiên dân số phân theo địa phương là <u>0,49 ‰</u>.
           </p>
-
           <p>
             <strong><mark>Dân tộc:</mark></strong> Tỉnh có
             <u>31 dân tộc</u> cùng 1 người nước ngoài sinh sống. Dân tộc Kinh
@@ -1226,7 +1185,6 @@
             Sán Dìu, Hrê, Raglay, Mnông, Thổ, Khơ Mú, Tà Ôi, Mạ, Giẻ-Triêng, La
             Chí, Chứt, Lô Lô, Cơ Lao, Cống.
           </p>
-
           <p>
             <strong><mark>Tôn giáo:</mark></strong> Tính đến ngày
             <u>1 tháng 4 năm 2019</u>, Hà Tĩnh có 8 tôn giáo với tổng
@@ -1235,7 +1193,6 @@
             Việt Nam 6 người, Minh Lý Đạo 4 người, Tin Lành 18 người, Đạo Tứ Ân
             Hiếu Nghĩa 1 người, Đạo Bửu Sơn Kỳ Hương 5 người.
           </p>
-
           <p>
             <strong><mark>Công giáo:</mark></strong> Hà Tĩnh là một trong 15
             tỉnh, thành phố có số lượng tín đồ Công giáo đông nhất cả nước, với
@@ -1247,7 +1204,6 @@
             <u>461 khu dân cư vùng giáo</u>, trong đó
             <u>114 vùng giáo toàn vùng</u>.
           </p>
-
           <p style="font-size: 15px">
             (Nguồn thông tin:
             <a
@@ -1911,7 +1867,6 @@
             trạng nguyên thấp hơn các vùng như <u>Bắc Ninh</u>,
             <u>Hải Dương</u> và <u>Nam Định</u>.
           </p>
-
           <p>
             <strong><mark>2. Giáo dục thời Pháp thuộc</mark></strong
             ><br />
@@ -1921,7 +1876,6 @@
             <u>Trường Y khoa Đông Dương</u> và <u>Trường Bách nghệ Hà Nội</u>,
             đặt nền móng cho giáo dục đại học hiện đại ở Việt Nam.
           </p>
-
           <p>
             <strong><mark>3. Giáo dục phổ thông</mark></strong
             ><br />
@@ -1933,7 +1887,6 @@
             tiếng như THPT chuyên Hà Nội – Amsterdam, Chu Văn An, Nguyễn Huệ và
             Trần Phú.
           </p>
-
           <p>
             <strong
               ><mark>4. Trường trung học chuyên và xóa mù chữ</mark></strong
@@ -1945,7 +1898,6 @@
             mù chữ của cả nước, nhưng đến năm <u>2017</u> đã hoàn thành chương
             trình xóa mù chữ mức độ 2.
           </p>
-
           <p>
             <strong><mark>5. Giáo dục đại học</mark></strong
             ><br />
@@ -1956,7 +1908,6 @@
             Bách khoa Hà Nội, Đại học Y Hà Nội giữ vai trò quan trọng trong đào
             tạo nguồn nhân lực.
           </p>
-
           <p>
             <strong><mark>6. Bất cập và định hướng phát triển</mark></strong
             ><br />
@@ -1991,7 +1942,6 @@
             dịch vụ cảng nước sâu với <u>59 cầu cảng</u> cho tàu từ
             <u>5 vạn đến 30 vạn tấn</u> cập bến.[33]
           </p>
-
           <p>
             <strong><mark>Khu kinh tế cửa khẩu quốc tế Cầu Treo</mark></strong>
             là một trong những khu kinh tế cửa khẩu được Chính phủ Việt Nam ưu
@@ -2009,7 +1959,6 @@
           </figcaption>
           <canvas id="grdpChartHaTinh" class="w3-center"></canvas>
         </figure>
-
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
           const ctx = document
@@ -2075,7 +2024,6 @@
             },
           });
         </script>
-
         <p>
           <strong>Lưu ý:</strong>
           <em
@@ -2887,7 +2835,6 @@
                 dài trên bờ cát, tận hưởng ánh nắng mặt trời và làn gió biển mát
                 rượi.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/bien-thien-cam-ha-tinh-1536x1012.jpg"
@@ -2919,7 +2866,6 @@
                 nhiên thơ mộng và khám phá nhiều di tích lịch sử nổi tiếng như:
                 Hoành Sơn Quan, đền thờ Thánh Mẫu Liễu Hạnh…
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/deo-ngang-ha-tinh-1536x865.jpg"
@@ -2993,7 +2939,6 @@
                 Hữu Trác mà còn có cơ hội khám phá phong cảnh sơn thủy hữu tình,
                 bốn mùa “thông reo, gió hát”.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/khu-di-tich-hai-thuong-lan-ong.jpg"
@@ -3024,7 +2969,6 @@
                 của người dân làng chài, thưởng thức nhiều loại hải sản tươi
                 ngon và check in khung cảnh hoàng hôn lãng mạn trên bờ biển.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/lang-ca-cua-nhuong-ha-tinh-1536x991.jpg"
@@ -3056,7 +3000,6 @@
                 chùa, du khách có thể đi cáp treo hoặc trải nghiệm leo bộ qua
                 các rừng thông, vừa đi vừa ngắm cảnh.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/chua-huong-tich-ha-tinh-1536x893.jpg"
@@ -3089,7 +3032,6 @@
                 bầu không khí trong lành và tận hưởng khung cảnh thiên nhiên
                 tuyệt đẹp.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/doi-che-ky-trung-ha-tinh.jpg"
@@ -3121,7 +3063,6 @@
                 xanh, thích hợp cho các hoạt động bơi lội, tắm biển và tổ chức
                 cắm trại, picnic trên bãi biển.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/bien-xuan-hai-ha-tinh-1536x1152.jpg"
@@ -3153,7 +3094,6 @@
                 Thạch Hải, du khách tha hồ tắm biển, check in và thưởng thức
                 nhiều loại hải sản hấp dẫn.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/CkJxxb0h-bien-thach-hai-ha-tinh-1536x1024.jpg"
@@ -3186,7 +3126,6 @@
                 chiêm ngưỡng kiến trúc độc đáo mà còn được khám phá khung cảnh
                 thiên nhiên, núi non hùng vĩ bao bọc quanh chùa.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/chua-thien-tuong-ha-tinh-1536x1229.jpg"
@@ -3219,7 +3158,6 @@
                 ngon và tham gia nhiều môn thể thao thú vị như: dù lượn, moto
                 nước…
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/bien-xuan-thanh-ha-tinh-1.jpg"
@@ -3252,7 +3190,6 @@
                 là khu mộ và khu lưu niệm. Khuôn viên di tích rộng lớn, được bao
                 quanh bởi những hàng thông xanh ngát.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/khu-di-tich-tran-phu-ha-tinh.jpg"
@@ -3285,7 +3222,6 @@
                 kiến trúc độc đáo của chùa, thắp hương, vãn cảnh và tận hưởng
                 không gian thanh tịnh nơi cửa Phật.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/chua-hang-ha-tinh-1536x1025.jpg"
@@ -3318,7 +3254,6 @@
                 lịch. Sau nhiều lần trùng tu, tôn tạo, đền Củi trở nên khang
                 trang, xứng tầm là điểm đến tâm linh nổi tiếng của Hà Tĩnh.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/den-cui-ha-tinh-1-1536x1152.jpg"
@@ -3351,7 +3286,6 @@
                 để du khách tìm hiểu về lịch sử hào hùng của dân tộc, tưởng nhớ
                 sự hy sinh anh dũng của các anh hùng liệt sĩ.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/nga-ba-dong-loc-ha-tinh.jpg"
@@ -3383,7 +3317,6 @@
                 Nguyễn Du, đền Thờ Nguyễn Nghiễm, Nguyễn Trọng, Đại Vương tiến
                 sĩ Nguyễn Huệ cùng đàn tế Nguyễn Quỳnh.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/khu-di-tich-nguyen-du-1536x864.jpg"
@@ -3415,7 +3348,6 @@
                 Trươi. Đến đây, du khách có thể tham quan hồ và trải nghiệm
                 nhiều hoạt động như đi thuyền, tắm thác, cắm trại.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/vuon-quoc-gia-vu-quang-ha-tinh.jpg"
@@ -3447,7 +3379,6 @@
                 Kẻ Gỗ được bắt giữa hồ với hình chữ C uốn lượng hay ngồi thuyền
                 du ngoạn trên hồ.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/ho-ke-go-ha-tinh-1536x922.jpg"
@@ -3479,7 +3410,6 @@
                 Các khu du lịch sinh thái đều mang đến nhiều trải nghiệm hấp dẫn
                 và thú vị cho du khách.
               </p>
-
               <figure>
                 <img
                   src="https://static.vinwonders.com/production/khu-du-lich-sinh-thai-ho-trai-tieu-1536x864.jpg"
@@ -3518,7 +3448,6 @@
             đường bộ, kênh mương, chiếu sáng được đầu tư nâng cấp, tạo điều kiện
             thuận lợi cho phát triển kinh tế – xã hội và thu hút đầu tư.
           </p>
-
           <p>
             <strong><mark>2. Kinh tế – xã hội</mark></strong
             ><br />
@@ -3532,7 +3461,6 @@
             an sinh xã hội và giảm nghèo được triển khai đồng bộ, góp phần ổn
             định đời sống người dân.
           </p>
-
           <p>
             <strong><mark>3. Quỹ đất và tiềm năng đầu tư</mark></strong
             ><br />
@@ -3543,7 +3471,6 @@
             Lãn Ông Lê Hữu Trác – tạo tiềm năng phát triển
             <u>du lịch văn hóa, tâm linh và trải nghiệm</u>.
           </p>
-
           <p>
             <strong><mark>4. Chuyển đổi số và cải cách hành chính</mark></strong
             ><br />
@@ -3553,7 +3480,6 @@
             vụ người dân và doanh nghiệp tốt hơn, đồng thời hỗ trợ phát triển
             kinh tế – xã hội bền vững.
           </p>
-
           <p>
             <strong><mark>5. Định hướng phát triển 2025–2030</mark></strong
             ><br />
@@ -3566,7 +3492,6 @@
             <u>giải pháp đột phá</u> giúp Hà Tĩnh tăng tốc phát triển trong giai
             đoạn tới.
           </p>
-
           <p>
             <strong><mark>Kết luận</mark></strong
             ><br />
@@ -3592,10 +3517,5 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("w3-hide");
-      }
-    </script>
   </body>
 </html>
